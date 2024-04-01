@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'}
+HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'}
 # r = requests.get(rf'https://www.harveynorman.co.nz/whiteware/refrigeration/?', headers=HEADERS)
 # soup = BeautifulSoup(r.content, "html.parser")
 # print(soup)
@@ -10,7 +10,7 @@ HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 
 with requests.Session() as session:
     session.headers.update({
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
     })
 
     response = session.get('https://www.harveynorman.co.nz/whiteware/refrigeration/?', headers=HEADERS)
