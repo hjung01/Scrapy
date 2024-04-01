@@ -2,7 +2,6 @@ from pathlib import Path
 
 import scrapy
 import json
-from pathlib import Path
 import csv
 
 
@@ -18,7 +17,6 @@ class hnSpider(scrapy.Spider):
 
     def parse(self, response):
         p_info_json  = response.xpath('//script[@type="application/javascript"]').get()
-        print(p_info_json)
         products = [json.loads(product) for product in p_info_json]
         filename = 'hn_prod_info.csv'
 

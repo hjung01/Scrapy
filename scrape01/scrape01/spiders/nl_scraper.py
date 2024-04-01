@@ -2,7 +2,6 @@ from pathlib import Path
 
 import scrapy
 import json
-from pathlib import Path
 import csv
 
 
