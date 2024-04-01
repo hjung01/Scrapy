@@ -17,7 +17,6 @@ class noelsSpider(scrapy.Spider):
 
     def parse(self, response):
         p_info_json  = response.xpath('//div[@class="product-tile"]/@data-gtm-product').getall()
-
         products = [json.loads(product) for product in p_info_json]
         filename = 'nl_prod_info.csv'
 
