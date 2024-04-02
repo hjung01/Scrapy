@@ -9,6 +9,9 @@ import os
 
 class noelsSpider(scrapy.Spider):
     name = "noels" #name of spider
+    custom_settings = {
+        'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
+    } # custom user agent
     start_urls = [f'https://www.noelleeming.co.nz/c/appliances?start=0'] #initial url to start scraping
     filename = 'nl_prod_info.csv' #filename for csv output of data
 
