@@ -5,6 +5,7 @@ from scrapy.spiders import Spider
 import json
 import csv
 import os
+import time
 
 
 class noelsSpider(scrapy.Spider):
@@ -12,13 +13,14 @@ class noelsSpider(scrapy.Spider):
     custom_settings = {
         'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
     } # custom user agent
-    start_urls = [f'https://www.noelleeming.co.nz/c/appliances?start=0'] #initial url to start scraping
+    start_urls = [f'https://www.noelleeming.co.nz/search?q=&start=0'] #initial url to start scraping
     filename = 'nl_prod_info.csv' #filename for csv output of data
 
     def __init__(self, *args, **kwargs):
         super(noelsSpider, self).__init__(*args, **kwargs)
         if Path(self.filename).exists(): #checks if csv file already exists
             os.remove(self.filename) # if file exists, delete the file
+        time.sleep(15)
 
     def parse(self, response):
         p_info_json  = response.xpath('//div[@class="product-tile"]/@data-gtm-product').getall() #xpath for product info html
@@ -37,5 +39,5 @@ class noelsSpider(scrapy.Spider):
         if products: #if there was any product information on the page
             current_start = int(response.url.split('start=')[-1]) #extracts current 'start' parameter from page url for pagination
             next_start = current_start + 32 #32 products on each page
-            next_page_url = f"https://www.noelleeming.co.nz/c/appliances?start={next_start}" #constructs new url to scrape +=32
+            next_page_url = f"https://www.noelleeming.co.nz/search?q=&start={next_start}" #constructs new url to scrape +=32
             yield response.follow(next_page_url, self.parse) #schedules request to next page, calling parse method and looping
