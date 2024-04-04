@@ -18,9 +18,10 @@ class noelsSpider(scrapy.Spider):
 
     def __init__(self, *args, **kwargs):
         super(noelsSpider, self).__init__(*args, **kwargs)
+        time.sleep(5)
         if Path(self.filename).exists(): #checks if csv file already exists
             os.remove(self.filename) # if file exists, delete the file
-        time.sleep(15)
+        time.sleep(5)
 
     def parse(self, response):
         p_info_json  = response.xpath('//div[@class="product-tile"]/@data-gtm-product').getall() #xpath for product info html
