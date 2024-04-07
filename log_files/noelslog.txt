@@ -1,0 +1,489 @@
+INFO: Scrapy 2.11.1 started (bot: scrape01)
+INFO: Versions: lxml 5.2.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.0, w3lib 2.1.2, Twisted 24.3.0, Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.5, Platform Windows-10-10.0.19045-SP0
+INFO: Enabled addons:
+[]
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: a3065453ba60bcb4
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Overridden settings:
+{'BOT_NAME': 'scrape01',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'scrape01.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['scrape01.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'}
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=0> (referer: None)
+DEBUG: Appended to file nl_prod_info.csv
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 315,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 50915,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.370303,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 4, 7, 13, 16, 3, 992161, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 386963,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 5,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2024, 4, 7, 13, 16, 3, 621858, tzinfo=datetime.timezone.utc)}
+INFO: Spider closed (finished)
+INFO: Scrapy 2.11.1 started (bot: scrape01)
+INFO: Versions: lxml 5.2.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.0, w3lib 2.1.2, Twisted 24.3.0, Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.5, Platform Windows-10-10.0.19045-SP0
+INFO: Enabled addons:
+[]
+DEBUG: Using selector: SelectSelector
+DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+INFO: Telnet Password: b51cf0632811c095
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Overridden settings:
+{'BOT_NAME': 'scrape01',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'scrape01.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['scrape01.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'}
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=0> (referer: None)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=32> (referer: https://www.noelleeming.co.nz/search?q=&start=0)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=64> (referer: https://www.noelleeming.co.nz/search?q=&start=32)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=96> (referer: https://www.noelleeming.co.nz/search?q=&start=64)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=128> (referer: https://www.noelleeming.co.nz/search?q=&start=96)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=160> (referer: https://www.noelleeming.co.nz/search?q=&start=128)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=192> (referer: https://www.noelleeming.co.nz/search?q=&start=160)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=224> (referer: https://www.noelleeming.co.nz/search?q=&start=192)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=256> (referer: https://www.noelleeming.co.nz/search?q=&start=224)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=288> (referer: https://www.noelleeming.co.nz/search?q=&start=256)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=320> (referer: https://www.noelleeming.co.nz/search?q=&start=288)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=352> (referer: https://www.noelleeming.co.nz/search?q=&start=320)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=384> (referer: https://www.noelleeming.co.nz/search?q=&start=352)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=416> (referer: https://www.noelleeming.co.nz/search?q=&start=384)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=448> (referer: https://www.noelleeming.co.nz/search?q=&start=416)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=480> (referer: https://www.noelleeming.co.nz/search?q=&start=448)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=512> (referer: https://www.noelleeming.co.nz/search?q=&start=480)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=544> (referer: https://www.noelleeming.co.nz/search?q=&start=512)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=576> (referer: https://www.noelleeming.co.nz/search?q=&start=544)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=608> (referer: https://www.noelleeming.co.nz/search?q=&start=576)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=640> (referer: https://www.noelleeming.co.nz/search?q=&start=608)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=672> (referer: https://www.noelleeming.co.nz/search?q=&start=640)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=704> (referer: https://www.noelleeming.co.nz/search?q=&start=672)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=736> (referer: https://www.noelleeming.co.nz/search?q=&start=704)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=768> (referer: https://www.noelleeming.co.nz/search?q=&start=736)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=800> (referer: https://www.noelleeming.co.nz/search?q=&start=768)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=832> (referer: https://www.noelleeming.co.nz/search?q=&start=800)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=864> (referer: https://www.noelleeming.co.nz/search?q=&start=832)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=896> (referer: https://www.noelleeming.co.nz/search?q=&start=864)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=928> (referer: https://www.noelleeming.co.nz/search?q=&start=896)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=960> (referer: https://www.noelleeming.co.nz/search?q=&start=928)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=992> (referer: https://www.noelleeming.co.nz/search?q=&start=960)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1024> (referer: https://www.noelleeming.co.nz/search?q=&start=992)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1056> (referer: https://www.noelleeming.co.nz/search?q=&start=1024)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1088> (referer: https://www.noelleeming.co.nz/search?q=&start=1056)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1120> (referer: https://www.noelleeming.co.nz/search?q=&start=1088)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1152> (referer: https://www.noelleeming.co.nz/search?q=&start=1120)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1184> (referer: https://www.noelleeming.co.nz/search?q=&start=1152)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1216> (referer: https://www.noelleeming.co.nz/search?q=&start=1184)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1248> (referer: https://www.noelleeming.co.nz/search?q=&start=1216)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1280> (referer: https://www.noelleeming.co.nz/search?q=&start=1248)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1312> (referer: https://www.noelleeming.co.nz/search?q=&start=1280)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1344> (referer: https://www.noelleeming.co.nz/search?q=&start=1312)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1376> (referer: https://www.noelleeming.co.nz/search?q=&start=1344)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1408> (referer: https://www.noelleeming.co.nz/search?q=&start=1376)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1440> (referer: https://www.noelleeming.co.nz/search?q=&start=1408)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1472> (referer: https://www.noelleeming.co.nz/search?q=&start=1440)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1504> (referer: https://www.noelleeming.co.nz/search?q=&start=1472)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1536> (referer: https://www.noelleeming.co.nz/search?q=&start=1504)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1568> (referer: https://www.noelleeming.co.nz/search?q=&start=1536)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1600> (referer: https://www.noelleeming.co.nz/search?q=&start=1568)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1632> (referer: https://www.noelleeming.co.nz/search?q=&start=1600)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1664> (referer: https://www.noelleeming.co.nz/search?q=&start=1632)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1696> (referer: https://www.noelleeming.co.nz/search?q=&start=1664)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1728> (referer: https://www.noelleeming.co.nz/search?q=&start=1696)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1760> (referer: https://www.noelleeming.co.nz/search?q=&start=1728)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1792> (referer: https://www.noelleeming.co.nz/search?q=&start=1760)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1824> (referer: https://www.noelleeming.co.nz/search?q=&start=1792)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1856> (referer: https://www.noelleeming.co.nz/search?q=&start=1824)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1888> (referer: https://www.noelleeming.co.nz/search?q=&start=1856)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1920> (referer: https://www.noelleeming.co.nz/search?q=&start=1888)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1952> (referer: https://www.noelleeming.co.nz/search?q=&start=1920)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1984> (referer: https://www.noelleeming.co.nz/search?q=&start=1952)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2016> (referer: https://www.noelleeming.co.nz/search?q=&start=1984)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2048> (referer: https://www.noelleeming.co.nz/search?q=&start=2016)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2080> (referer: https://www.noelleeming.co.nz/search?q=&start=2048)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2112> (referer: https://www.noelleeming.co.nz/search?q=&start=2080)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2144> (referer: https://www.noelleeming.co.nz/search?q=&start=2112)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2176> (referer: https://www.noelleeming.co.nz/search?q=&start=2144)
+DEBUG: Appended to file nl_prod_info.csv
+INFO: Crawled 69 pages (at 69 pages/min), scraped 0 items (at 0 items/min)
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2208> (referer: https://www.noelleeming.co.nz/search?q=&start=2176)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2240> (referer: https://www.noelleeming.co.nz/search?q=&start=2208)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2272> (referer: https://www.noelleeming.co.nz/search?q=&start=2240)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2304> (referer: https://www.noelleeming.co.nz/search?q=&start=2272)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2336> (referer: https://www.noelleeming.co.nz/search?q=&start=2304)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2368> (referer: https://www.noelleeming.co.nz/search?q=&start=2336)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2400> (referer: https://www.noelleeming.co.nz/search?q=&start=2368)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2432> (referer: https://www.noelleeming.co.nz/search?q=&start=2400)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2464> (referer: https://www.noelleeming.co.nz/search?q=&start=2432)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2496> (referer: https://www.noelleeming.co.nz/search?q=&start=2464)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2528> (referer: https://www.noelleeming.co.nz/search?q=&start=2496)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2560> (referer: https://www.noelleeming.co.nz/search?q=&start=2528)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2592> (referer: https://www.noelleeming.co.nz/search?q=&start=2560)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2624> (referer: https://www.noelleeming.co.nz/search?q=&start=2592)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2656> (referer: https://www.noelleeming.co.nz/search?q=&start=2624)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2688> (referer: https://www.noelleeming.co.nz/search?q=&start=2656)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2720> (referer: https://www.noelleeming.co.nz/search?q=&start=2688)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2752> (referer: https://www.noelleeming.co.nz/search?q=&start=2720)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2784> (referer: https://www.noelleeming.co.nz/search?q=&start=2752)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2816> (referer: https://www.noelleeming.co.nz/search?q=&start=2784)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2848> (referer: https://www.noelleeming.co.nz/search?q=&start=2816)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2880> (referer: https://www.noelleeming.co.nz/search?q=&start=2848)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2912> (referer: https://www.noelleeming.co.nz/search?q=&start=2880)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2944> (referer: https://www.noelleeming.co.nz/search?q=&start=2912)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2976> (referer: https://www.noelleeming.co.nz/search?q=&start=2944)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3008> (referer: https://www.noelleeming.co.nz/search?q=&start=2976)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3040> (referer: https://www.noelleeming.co.nz/search?q=&start=3008)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3072> (referer: https://www.noelleeming.co.nz/search?q=&start=3040)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3104> (referer: https://www.noelleeming.co.nz/search?q=&start=3072)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3136> (referer: https://www.noelleeming.co.nz/search?q=&start=3104)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3168> (referer: https://www.noelleeming.co.nz/search?q=&start=3136)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3200> (referer: https://www.noelleeming.co.nz/search?q=&start=3168)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3232> (referer: https://www.noelleeming.co.nz/search?q=&start=3200)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3264> (referer: https://www.noelleeming.co.nz/search?q=&start=3232)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3296> (referer: https://www.noelleeming.co.nz/search?q=&start=3264)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3328> (referer: https://www.noelleeming.co.nz/search?q=&start=3296)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3360> (referer: https://www.noelleeming.co.nz/search?q=&start=3328)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3392> (referer: https://www.noelleeming.co.nz/search?q=&start=3360)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3424> (referer: https://www.noelleeming.co.nz/search?q=&start=3392)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3456> (referer: https://www.noelleeming.co.nz/search?q=&start=3424)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3488> (referer: https://www.noelleeming.co.nz/search?q=&start=3456)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3520> (referer: https://www.noelleeming.co.nz/search?q=&start=3488)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3552> (referer: https://www.noelleeming.co.nz/search?q=&start=3520)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3584> (referer: https://www.noelleeming.co.nz/search?q=&start=3552)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3616> (referer: https://www.noelleeming.co.nz/search?q=&start=3584)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3648> (referer: https://www.noelleeming.co.nz/search?q=&start=3616)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3680> (referer: https://www.noelleeming.co.nz/search?q=&start=3648)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3712> (referer: https://www.noelleeming.co.nz/search?q=&start=3680)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3744> (referer: https://www.noelleeming.co.nz/search?q=&start=3712)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3776> (referer: https://www.noelleeming.co.nz/search?q=&start=3744)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3808> (referer: https://www.noelleeming.co.nz/search?q=&start=3776)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3840> (referer: https://www.noelleeming.co.nz/search?q=&start=3808)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3872> (referer: https://www.noelleeming.co.nz/search?q=&start=3840)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3904> (referer: https://www.noelleeming.co.nz/search?q=&start=3872)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3936> (referer: https://www.noelleeming.co.nz/search?q=&start=3904)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3968> (referer: https://www.noelleeming.co.nz/search?q=&start=3936)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4000> (referer: https://www.noelleeming.co.nz/search?q=&start=3968)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4032> (referer: https://www.noelleeming.co.nz/search?q=&start=4000)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4064> (referer: https://www.noelleeming.co.nz/search?q=&start=4032)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4096> (referer: https://www.noelleeming.co.nz/search?q=&start=4064)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4128> (referer: https://www.noelleeming.co.nz/search?q=&start=4096)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4160> (referer: https://www.noelleeming.co.nz/search?q=&start=4128)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4192> (referer: https://www.noelleeming.co.nz/search?q=&start=4160)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4224> (referer: https://www.noelleeming.co.nz/search?q=&start=4192)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4256> (referer: https://www.noelleeming.co.nz/search?q=&start=4224)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4288> (referer: https://www.noelleeming.co.nz/search?q=&start=4256)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4320> (referer: https://www.noelleeming.co.nz/search?q=&start=4288)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4352> (referer: https://www.noelleeming.co.nz/search?q=&start=4320)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4384> (referer: https://www.noelleeming.co.nz/search?q=&start=4352)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4416> (referer: https://www.noelleeming.co.nz/search?q=&start=4384)
+DEBUG: Appended to file nl_prod_info.csv
+INFO: Crawled 139 pages (at 70 pages/min), scraped 0 items (at 0 items/min)
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4448> (referer: https://www.noelleeming.co.nz/search?q=&start=4416)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4480> (referer: https://www.noelleeming.co.nz/search?q=&start=4448)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4512> (referer: https://www.noelleeming.co.nz/search?q=&start=4480)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4544> (referer: https://www.noelleeming.co.nz/search?q=&start=4512)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4576> (referer: https://www.noelleeming.co.nz/search?q=&start=4544)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4608> (referer: https://www.noelleeming.co.nz/search?q=&start=4576)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4640> (referer: https://www.noelleeming.co.nz/search?q=&start=4608)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4672> (referer: https://www.noelleeming.co.nz/search?q=&start=4640)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4704> (referer: https://www.noelleeming.co.nz/search?q=&start=4672)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4736> (referer: https://www.noelleeming.co.nz/search?q=&start=4704)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4768> (referer: https://www.noelleeming.co.nz/search?q=&start=4736)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4800> (referer: https://www.noelleeming.co.nz/search?q=&start=4768)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4832> (referer: https://www.noelleeming.co.nz/search?q=&start=4800)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4864> (referer: https://www.noelleeming.co.nz/search?q=&start=4832)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4896> (referer: https://www.noelleeming.co.nz/search?q=&start=4864)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4928> (referer: https://www.noelleeming.co.nz/search?q=&start=4896)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4960> (referer: https://www.noelleeming.co.nz/search?q=&start=4928)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4992> (referer: https://www.noelleeming.co.nz/search?q=&start=4960)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5024> (referer: https://www.noelleeming.co.nz/search?q=&start=4992)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5056> (referer: https://www.noelleeming.co.nz/search?q=&start=5024)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5088> (referer: https://www.noelleeming.co.nz/search?q=&start=5056)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5120> (referer: https://www.noelleeming.co.nz/search?q=&start=5088)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5152> (referer: https://www.noelleeming.co.nz/search?q=&start=5120)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5184> (referer: https://www.noelleeming.co.nz/search?q=&start=5152)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5216> (referer: https://www.noelleeming.co.nz/search?q=&start=5184)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5248> (referer: https://www.noelleeming.co.nz/search?q=&start=5216)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5280> (referer: https://www.noelleeming.co.nz/search?q=&start=5248)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5312> (referer: https://www.noelleeming.co.nz/search?q=&start=5280)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5344> (referer: https://www.noelleeming.co.nz/search?q=&start=5312)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5376> (referer: https://www.noelleeming.co.nz/search?q=&start=5344)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5408> (referer: https://www.noelleeming.co.nz/search?q=&start=5376)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5440> (referer: https://www.noelleeming.co.nz/search?q=&start=5408)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5472> (referer: https://www.noelleeming.co.nz/search?q=&start=5440)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5504> (referer: https://www.noelleeming.co.nz/search?q=&start=5472)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5536> (referer: https://www.noelleeming.co.nz/search?q=&start=5504)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5568> (referer: https://www.noelleeming.co.nz/search?q=&start=5536)
+DEBUG: Appended to file nl_prod_info.csv
+DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5600> (referer: https://www.noelleeming.co.nz/search?q=&start=5568)
+DEBUG: Appended to file nl_prod_info.csv
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 203419,
+ 'downloader/request_count': 176,
+ 'downloader/request_method_count/GET': 176,
+ 'downloader/response_bytes': 13147183,
+ 'downloader/response_count': 176,
+ 'downloader/response_status_count/200': 176,
+ 'elapsed_time_seconds': 150.712813,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 4, 7, 13, 18, 50, 183431, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 158702253,
+ 'httpcompression/response_count': 176,
+ 'log_count/DEBUG': 355,
+ 'log_count/INFO': 12,
+ 'request_depth_max': 175,
+ 'response_received_count': 176,
+ 'scheduler/dequeued': 176,
+ 'scheduler/dequeued/memory': 176,
+ 'scheduler/enqueued': 176,
+ 'scheduler/enqueued/memory': 176,
+ 'start_time': datetime.datetime(2024, 4, 7, 13, 16, 19, 470618, tzinfo=datetime.timezone.utc)}
+INFO: Spider closed (finished)

@@ -6,6 +6,8 @@ import json
 import csv
 import os
 import time
+import logging
+from scrapy.utils.log import configure_logging 
 
 
 class noelsSpider(scrapy.Spider):
@@ -16,12 +18,19 @@ class noelsSpider(scrapy.Spider):
     start_urls = [f'https://www.noelleeming.co.nz/search?q=&start=0'] #initial url to start scraping
     filename = 'nl_prod_info.csv' #filename for csv output of data
 
+    #logging of spider
+    configure_logging(install_root_handler=False)
+    logging.basicConfig(
+        filename=f'D:\Py Projects\Scrapy\log_files\{name} spider.log',
+        format='%(levelname)s: %(message)s',
+        level=logging.INFO
+    )
+
     def __init__(self, *args, **kwargs):
         super(noelsSpider, self).__init__(*args, **kwargs)
         time.sleep(5)
         if Path(self.filename).exists(): #checks if csv file already exists
             os.remove(self.filename) # if file exists, delete the file
-        time.sleep(5)
 
     def parse(self, response):
         p_info_json  = response.xpath('//div[@class="product-tile"]/@data-gtm-product').getall() #xpath for product info html

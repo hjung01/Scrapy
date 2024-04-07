@@ -12,8 +12,11 @@ BOT_NAME = "scrape01"
 SPIDER_MODULES = ["scrape01.spiders"]
 NEWSPIDER_MODULE = "scrape01.spiders"
 
-
-LOG_LEVEL = 'WARNING'
+#logging
+# LOG_FILE_PATTERN = '{spider_name}.log'
+# LOG_LEVEL = 'DEBUG'
+# LOG_FORMAT = '%(asctime)s [%(name)s] %(levelname)s: %(message)s'
+# LOG_DATEFORMAT = '%Y-%m-%d %H:%M:%S'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
