@@ -1,5 +1,4 @@
 from pathlib import Path
-
 import scrapy
 from scrapy.spiders import Spider
 import json
@@ -12,9 +11,9 @@ from scrapy.utils.log import configure_logging
 
 class noelsSpider(scrapy.Spider):
     name = "noels" #name of spider
-    custom_settings = {
-        'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
-    } # custom user agent
+    # custom_settings = {
+    #     'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
+    # } # custom user agent
     start_urls = [f'https://www.noelleeming.co.nz/search?q=&start=0'] #initial url to start scraping
     filename = 'nl_prod_info.csv' #filename for csv output of data
 
@@ -22,7 +21,8 @@ class noelsSpider(scrapy.Spider):
     configure_logging(install_root_handler=False)
     logging.basicConfig(
         filename=f'D:\Py Projects\Scrapy\log_files\{name} spider.log',
-        format='%(levelname)s: %(message)s',
+        format = '%(asctime)s [%(name)s] %(levelname)s: %(message)s',
+        datefmt = '%Y-%m-%d %H:%M:%S',
         level=logging.INFO
     )
 
