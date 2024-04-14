@@ -34,7 +34,7 @@ class noelsSpider(scrapy.Spider):
 
     def parse(self, response):
         p_info_json  = response.xpath('//div[@class="product-tile"]/@data-gtm-product').getall() #xpath for product info html
-        products = [json.loads(product) for product in p_info_json] #parse each JSON string into python dictionary
+        products = [json.loads(product) for product in p_info_json] #parse each JSON string into python dictionaryf
         filename = 'nl_prod_info.csv' #file to write data to
 
         with Path(filename).open('a', newline='', encoding='utf-8') as csvfile:
