@@ -2630,3 +2630,1733 @@ NameError: name 'Path' is not defined
  'scheduler/enqueued/memory': 171,
  'start_time': datetime.datetime(2024, 4, 14, 11, 11, 15, 705930, tzinfo=datetime.timezone.utc)}
 2024-04-14 23:13:57 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-04-16 00:00:31 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scrape01)
+2024-04-16 00:00:31 [scrapy.utils.log] INFO: Versions: lxml 5.2.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.0, w3lib 2.1.2, Twisted 24.3.0, Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.5, Platform Windows-10-10.0.19045-SP0
+2024-04-16 00:00:36 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-04-16 00:00:36 [asyncio] DEBUG: Using selector: SelectSelector
+2024-04-16 00:00:36 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-04-16 00:00:36 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-04-16 00:00:36 [scrapy.extensions.telnet] INFO: Telnet Password: 63b74719bb9d97dc
+2024-04-16 00:00:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-04-16 00:00:36 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrape01',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'scrape01.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['scrape01.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-04-16 00:00:36 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-04-16 00:00:36 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-04-16 00:00:36 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-04-16 00:00:36 [scrapy.core.engine] INFO: Spider opened
+2024-04-16 00:00:36 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-04-16 00:00:36 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-04-16 00:00:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=0> (referer: None)
+2024-04-16 00:00:37 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:00:37 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-04-16 00:00:37 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 239,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 51684,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.503204,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 4, 15, 12, 0, 37, 406731, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 396591,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 5,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2024, 4, 15, 12, 0, 36, 903527, tzinfo=datetime.timezone.utc)}
+2024-04-16 00:00:37 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-04-16 00:00:52 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scrape01)
+2024-04-16 00:00:52 [scrapy.utils.log] INFO: Versions: lxml 5.2.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.0, w3lib 2.1.2, Twisted 24.3.0, Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.5, Platform Windows-10-10.0.19045-SP0
+2024-04-16 00:00:57 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-04-16 00:00:57 [asyncio] DEBUG: Using selector: SelectSelector
+2024-04-16 00:00:57 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-04-16 00:00:57 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-04-16 00:00:57 [scrapy.extensions.telnet] INFO: Telnet Password: bd4ed3959a5ffb5a
+2024-04-16 00:00:57 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-04-16 00:00:57 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrape01',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'scrape01.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['scrape01.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-04-16 00:00:57 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-04-16 00:00:57 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-04-16 00:00:57 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-04-16 00:00:57 [scrapy.core.engine] INFO: Spider opened
+2024-04-16 00:00:57 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-04-16 00:00:57 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-04-16 00:00:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=0> (referer: None)
+2024-04-16 00:00:58 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:00:58 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-04-16 00:00:58 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 239,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 51796,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.432831,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 4, 15, 12, 0, 58, 319715, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 396591,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 5,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2024, 4, 15, 12, 0, 57, 886884, tzinfo=datetime.timezone.utc)}
+2024-04-16 00:00:58 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-04-16 00:01:06 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scrape01)
+2024-04-16 00:01:06 [scrapy.utils.log] INFO: Versions: lxml 5.2.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.0, w3lib 2.1.2, Twisted 24.3.0, Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.5, Platform Windows-10-10.0.19045-SP0
+2024-04-16 00:01:11 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-04-16 00:01:11 [asyncio] DEBUG: Using selector: SelectSelector
+2024-04-16 00:01:11 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-04-16 00:01:11 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-04-16 00:01:11 [scrapy.extensions.telnet] INFO: Telnet Password: 30c5c5d82ea22565
+2024-04-16 00:01:11 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-04-16 00:01:11 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrape01',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'scrape01.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['scrape01.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'}
+2024-04-16 00:01:11 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-04-16 00:01:11 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-04-16 00:01:11 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-04-16 00:01:11 [scrapy.core.engine] INFO: Spider opened
+2024-04-16 00:01:11 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-04-16 00:01:11 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-04-16 00:01:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=0> (referer: None)
+2024-04-16 00:01:12 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:12 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-04-16 00:01:12 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 315,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 51756,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.398507,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 4, 15, 12, 1, 12, 124799, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 396591,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 5,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2024, 4, 15, 12, 1, 11, 726292, tzinfo=datetime.timezone.utc)}
+2024-04-16 00:01:12 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-04-16 00:01:31 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scrape01)
+2024-04-16 00:01:31 [scrapy.utils.log] INFO: Versions: lxml 5.2.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.0, w3lib 2.1.2, Twisted 24.3.0, Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.5, Platform Windows-10-10.0.19045-SP0
+2024-04-16 00:01:36 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-04-16 00:01:36 [asyncio] DEBUG: Using selector: SelectSelector
+2024-04-16 00:01:36 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-04-16 00:01:36 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-04-16 00:01:36 [scrapy.extensions.telnet] INFO: Telnet Password: bc400b501cea4c40
+2024-04-16 00:01:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-04-16 00:01:36 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrape01',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'scrape01.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['scrape01.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-04-16 00:01:36 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-04-16 00:01:36 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-04-16 00:01:36 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-04-16 00:01:36 [scrapy.core.engine] INFO: Spider opened
+2024-04-16 00:01:36 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-04-16 00:01:36 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-04-16 00:01:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=0> (referer: None)
+2024-04-16 00:01:37 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=32> (referer: https://www.noelleeming.co.nz/search?q=&start=0)
+2024-04-16 00:01:38 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=64> (referer: https://www.noelleeming.co.nz/search?q=&start=32)
+2024-04-16 00:01:39 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=96> (referer: https://www.noelleeming.co.nz/search?q=&start=64)
+2024-04-16 00:01:40 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=128> (referer: https://www.noelleeming.co.nz/search?q=&start=96)
+2024-04-16 00:01:41 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=160> (referer: https://www.noelleeming.co.nz/search?q=&start=128)
+2024-04-16 00:01:42 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=192> (referer: https://www.noelleeming.co.nz/search?q=&start=160)
+2024-04-16 00:01:43 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=224> (referer: https://www.noelleeming.co.nz/search?q=&start=192)
+2024-04-16 00:01:44 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=256> (referer: https://www.noelleeming.co.nz/search?q=&start=224)
+2024-04-16 00:01:45 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=288> (referer: https://www.noelleeming.co.nz/search?q=&start=256)
+2024-04-16 00:01:46 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=320> (referer: https://www.noelleeming.co.nz/search?q=&start=288)
+2024-04-16 00:01:47 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=352> (referer: https://www.noelleeming.co.nz/search?q=&start=320)
+2024-04-16 00:01:48 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=384> (referer: https://www.noelleeming.co.nz/search?q=&start=352)
+2024-04-16 00:01:49 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=416> (referer: https://www.noelleeming.co.nz/search?q=&start=384)
+2024-04-16 00:01:50 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=448> (referer: https://www.noelleeming.co.nz/search?q=&start=416)
+2024-04-16 00:01:51 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=480> (referer: https://www.noelleeming.co.nz/search?q=&start=448)
+2024-04-16 00:01:52 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=512> (referer: https://www.noelleeming.co.nz/search?q=&start=480)
+2024-04-16 00:01:53 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=544> (referer: https://www.noelleeming.co.nz/search?q=&start=512)
+2024-04-16 00:01:54 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=576> (referer: https://www.noelleeming.co.nz/search?q=&start=544)
+2024-04-16 00:01:55 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=608> (referer: https://www.noelleeming.co.nz/search?q=&start=576)
+2024-04-16 00:01:56 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=640> (referer: https://www.noelleeming.co.nz/search?q=&start=608)
+2024-04-16 00:01:57 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=672> (referer: https://www.noelleeming.co.nz/search?q=&start=640)
+2024-04-16 00:01:57 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=704> (referer: https://www.noelleeming.co.nz/search?q=&start=672)
+2024-04-16 00:01:58 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:01:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=736> (referer: https://www.noelleeming.co.nz/search?q=&start=704)
+2024-04-16 00:01:59 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=768> (referer: https://www.noelleeming.co.nz/search?q=&start=736)
+2024-04-16 00:02:00 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=800> (referer: https://www.noelleeming.co.nz/search?q=&start=768)
+2024-04-16 00:02:01 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=832> (referer: https://www.noelleeming.co.nz/search?q=&start=800)
+2024-04-16 00:02:02 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=864> (referer: https://www.noelleeming.co.nz/search?q=&start=832)
+2024-04-16 00:02:03 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=896> (referer: https://www.noelleeming.co.nz/search?q=&start=864)
+2024-04-16 00:02:04 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=928> (referer: https://www.noelleeming.co.nz/search?q=&start=896)
+2024-04-16 00:02:05 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=960> (referer: https://www.noelleeming.co.nz/search?q=&start=928)
+2024-04-16 00:02:06 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=992> (referer: https://www.noelleeming.co.nz/search?q=&start=960)
+2024-04-16 00:02:07 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1024> (referer: https://www.noelleeming.co.nz/search?q=&start=992)
+2024-04-16 00:02:08 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1056> (referer: https://www.noelleeming.co.nz/search?q=&start=1024)
+2024-04-16 00:02:09 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1088> (referer: https://www.noelleeming.co.nz/search?q=&start=1056)
+2024-04-16 00:02:10 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1120> (referer: https://www.noelleeming.co.nz/search?q=&start=1088)
+2024-04-16 00:02:11 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1152> (referer: https://www.noelleeming.co.nz/search?q=&start=1120)
+2024-04-16 00:02:12 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1184> (referer: https://www.noelleeming.co.nz/search?q=&start=1152)
+2024-04-16 00:02:13 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1216> (referer: https://www.noelleeming.co.nz/search?q=&start=1184)
+2024-04-16 00:02:14 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1248> (referer: https://www.noelleeming.co.nz/search?q=&start=1216)
+2024-04-16 00:02:15 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1280> (referer: https://www.noelleeming.co.nz/search?q=&start=1248)
+2024-04-16 00:02:16 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1312> (referer: https://www.noelleeming.co.nz/search?q=&start=1280)
+2024-04-16 00:02:17 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1344> (referer: https://www.noelleeming.co.nz/search?q=&start=1312)
+2024-04-16 00:02:18 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1376> (referer: https://www.noelleeming.co.nz/search?q=&start=1344)
+2024-04-16 00:02:19 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1408> (referer: https://www.noelleeming.co.nz/search?q=&start=1376)
+2024-04-16 00:02:20 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1440> (referer: https://www.noelleeming.co.nz/search?q=&start=1408)
+2024-04-16 00:02:21 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1472> (referer: https://www.noelleeming.co.nz/search?q=&start=1440)
+2024-04-16 00:02:22 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1504> (referer: https://www.noelleeming.co.nz/search?q=&start=1472)
+2024-04-16 00:02:23 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1536> (referer: https://www.noelleeming.co.nz/search?q=&start=1504)
+2024-04-16 00:02:23 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1568> (referer: https://www.noelleeming.co.nz/search?q=&start=1536)
+2024-04-16 00:02:24 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1600> (referer: https://www.noelleeming.co.nz/search?q=&start=1568)
+2024-04-16 00:02:25 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1632> (referer: https://www.noelleeming.co.nz/search?q=&start=1600)
+2024-04-16 00:02:26 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1664> (referer: https://www.noelleeming.co.nz/search?q=&start=1632)
+2024-04-16 00:02:27 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1696> (referer: https://www.noelleeming.co.nz/search?q=&start=1664)
+2024-04-16 00:02:28 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1728> (referer: https://www.noelleeming.co.nz/search?q=&start=1696)
+2024-04-16 00:02:29 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1760> (referer: https://www.noelleeming.co.nz/search?q=&start=1728)
+2024-04-16 00:02:30 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1792> (referer: https://www.noelleeming.co.nz/search?q=&start=1760)
+2024-04-16 00:02:30 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1824> (referer: https://www.noelleeming.co.nz/search?q=&start=1792)
+2024-04-16 00:02:31 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1856> (referer: https://www.noelleeming.co.nz/search?q=&start=1824)
+2024-04-16 00:02:32 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1888> (referer: https://www.noelleeming.co.nz/search?q=&start=1856)
+2024-04-16 00:02:33 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1920> (referer: https://www.noelleeming.co.nz/search?q=&start=1888)
+2024-04-16 00:02:34 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1952> (referer: https://www.noelleeming.co.nz/search?q=&start=1920)
+2024-04-16 00:02:34 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1984> (referer: https://www.noelleeming.co.nz/search?q=&start=1952)
+2024-04-16 00:02:35 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2016> (referer: https://www.noelleeming.co.nz/search?q=&start=1984)
+2024-04-16 00:02:36 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:36 [scrapy.extensions.logstats] INFO: Crawled 64 pages (at 64 pages/min), scraped 0 items (at 0 items/min)
+2024-04-16 00:02:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2048> (referer: https://www.noelleeming.co.nz/search?q=&start=2016)
+2024-04-16 00:02:37 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2080> (referer: https://www.noelleeming.co.nz/search?q=&start=2048)
+2024-04-16 00:02:38 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2112> (referer: https://www.noelleeming.co.nz/search?q=&start=2080)
+2024-04-16 00:02:39 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2144> (referer: https://www.noelleeming.co.nz/search?q=&start=2112)
+2024-04-16 00:02:40 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2176> (referer: https://www.noelleeming.co.nz/search?q=&start=2144)
+2024-04-16 00:02:40 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2208> (referer: https://www.noelleeming.co.nz/search?q=&start=2176)
+2024-04-16 00:02:41 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2240> (referer: https://www.noelleeming.co.nz/search?q=&start=2208)
+2024-04-16 00:02:42 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2272> (referer: https://www.noelleeming.co.nz/search?q=&start=2240)
+2024-04-16 00:02:43 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2304> (referer: https://www.noelleeming.co.nz/search?q=&start=2272)
+2024-04-16 00:02:44 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2336> (referer: https://www.noelleeming.co.nz/search?q=&start=2304)
+2024-04-16 00:02:45 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2368> (referer: https://www.noelleeming.co.nz/search?q=&start=2336)
+2024-04-16 00:02:46 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2400> (referer: https://www.noelleeming.co.nz/search?q=&start=2368)
+2024-04-16 00:02:47 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2432> (referer: https://www.noelleeming.co.nz/search?q=&start=2400)
+2024-04-16 00:02:48 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2464> (referer: https://www.noelleeming.co.nz/search?q=&start=2432)
+2024-04-16 00:02:49 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2496> (referer: https://www.noelleeming.co.nz/search?q=&start=2464)
+2024-04-16 00:02:49 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2528> (referer: https://www.noelleeming.co.nz/search?q=&start=2496)
+2024-04-16 00:02:50 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2560> (referer: https://www.noelleeming.co.nz/search?q=&start=2528)
+2024-04-16 00:02:51 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2592> (referer: https://www.noelleeming.co.nz/search?q=&start=2560)
+2024-04-16 00:02:52 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2624> (referer: https://www.noelleeming.co.nz/search?q=&start=2592)
+2024-04-16 00:02:53 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2656> (referer: https://www.noelleeming.co.nz/search?q=&start=2624)
+2024-04-16 00:02:54 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2688> (referer: https://www.noelleeming.co.nz/search?q=&start=2656)
+2024-04-16 00:02:55 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2720> (referer: https://www.noelleeming.co.nz/search?q=&start=2688)
+2024-04-16 00:02:56 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2752> (referer: https://www.noelleeming.co.nz/search?q=&start=2720)
+2024-04-16 00:02:56 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2784> (referer: https://www.noelleeming.co.nz/search?q=&start=2752)
+2024-04-16 00:02:57 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2816> (referer: https://www.noelleeming.co.nz/search?q=&start=2784)
+2024-04-16 00:02:58 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:02:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2848> (referer: https://www.noelleeming.co.nz/search?q=&start=2816)
+2024-04-16 00:02:59 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2880> (referer: https://www.noelleeming.co.nz/search?q=&start=2848)
+2024-04-16 00:03:00 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2912> (referer: https://www.noelleeming.co.nz/search?q=&start=2880)
+2024-04-16 00:03:01 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2944> (referer: https://www.noelleeming.co.nz/search?q=&start=2912)
+2024-04-16 00:03:02 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2976> (referer: https://www.noelleeming.co.nz/search?q=&start=2944)
+2024-04-16 00:03:02 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3008> (referer: https://www.noelleeming.co.nz/search?q=&start=2976)
+2024-04-16 00:03:03 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3040> (referer: https://www.noelleeming.co.nz/search?q=&start=3008)
+2024-04-16 00:03:04 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3072> (referer: https://www.noelleeming.co.nz/search?q=&start=3040)
+2024-04-16 00:03:05 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3104> (referer: https://www.noelleeming.co.nz/search?q=&start=3072)
+2024-04-16 00:03:06 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3136> (referer: https://www.noelleeming.co.nz/search?q=&start=3104)
+2024-04-16 00:03:07 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3168> (referer: https://www.noelleeming.co.nz/search?q=&start=3136)
+2024-04-16 00:03:08 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3200> (referer: https://www.noelleeming.co.nz/search?q=&start=3168)
+2024-04-16 00:03:08 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3232> (referer: https://www.noelleeming.co.nz/search?q=&start=3200)
+2024-04-16 00:03:09 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3264> (referer: https://www.noelleeming.co.nz/search?q=&start=3232)
+2024-04-16 00:03:10 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3296> (referer: https://www.noelleeming.co.nz/search?q=&start=3264)
+2024-04-16 00:03:11 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3328> (referer: https://www.noelleeming.co.nz/search?q=&start=3296)
+2024-04-16 00:03:12 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3360> (referer: https://www.noelleeming.co.nz/search?q=&start=3328)
+2024-04-16 00:03:13 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3392> (referer: https://www.noelleeming.co.nz/search?q=&start=3360)
+2024-04-16 00:03:14 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3424> (referer: https://www.noelleeming.co.nz/search?q=&start=3392)
+2024-04-16 00:03:15 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3456> (referer: https://www.noelleeming.co.nz/search?q=&start=3424)
+2024-04-16 00:03:15 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3488> (referer: https://www.noelleeming.co.nz/search?q=&start=3456)
+2024-04-16 00:03:16 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3520> (referer: https://www.noelleeming.co.nz/search?q=&start=3488)
+2024-04-16 00:03:17 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3552> (referer: https://www.noelleeming.co.nz/search?q=&start=3520)
+2024-04-16 00:03:18 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3584> (referer: https://www.noelleeming.co.nz/search?q=&start=3552)
+2024-04-16 00:03:19 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3616> (referer: https://www.noelleeming.co.nz/search?q=&start=3584)
+2024-04-16 00:03:20 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3648> (referer: https://www.noelleeming.co.nz/search?q=&start=3616)
+2024-04-16 00:03:20 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3680> (referer: https://www.noelleeming.co.nz/search?q=&start=3648)
+2024-04-16 00:03:21 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3712> (referer: https://www.noelleeming.co.nz/search?q=&start=3680)
+2024-04-16 00:03:22 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3744> (referer: https://www.noelleeming.co.nz/search?q=&start=3712)
+2024-04-16 00:03:23 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3776> (referer: https://www.noelleeming.co.nz/search?q=&start=3744)
+2024-04-16 00:03:24 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3808> (referer: https://www.noelleeming.co.nz/search?q=&start=3776)
+2024-04-16 00:03:25 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3840> (referer: https://www.noelleeming.co.nz/search?q=&start=3808)
+2024-04-16 00:03:26 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3872> (referer: https://www.noelleeming.co.nz/search?q=&start=3840)
+2024-04-16 00:03:26 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3904> (referer: https://www.noelleeming.co.nz/search?q=&start=3872)
+2024-04-16 00:03:27 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3936> (referer: https://www.noelleeming.co.nz/search?q=&start=3904)
+2024-04-16 00:03:28 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3968> (referer: https://www.noelleeming.co.nz/search?q=&start=3936)
+2024-04-16 00:03:29 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4000> (referer: https://www.noelleeming.co.nz/search?q=&start=3968)
+2024-04-16 00:03:30 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4032> (referer: https://www.noelleeming.co.nz/search?q=&start=4000)
+2024-04-16 00:03:31 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4064> (referer: https://www.noelleeming.co.nz/search?q=&start=4032)
+2024-04-16 00:03:32 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4096> (referer: https://www.noelleeming.co.nz/search?q=&start=4064)
+2024-04-16 00:03:32 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4128> (referer: https://www.noelleeming.co.nz/search?q=&start=4096)
+2024-04-16 00:03:33 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4160> (referer: https://www.noelleeming.co.nz/search?q=&start=4128)
+2024-04-16 00:03:34 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4192> (referer: https://www.noelleeming.co.nz/search?q=&start=4160)
+2024-04-16 00:03:35 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4224> (referer: https://www.noelleeming.co.nz/search?q=&start=4192)
+2024-04-16 00:03:36 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4256> (referer: https://www.noelleeming.co.nz/search?q=&start=4224)
+2024-04-16 00:03:36 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:36 [scrapy.extensions.logstats] INFO: Crawled 134 pages (at 70 pages/min), scraped 0 items (at 0 items/min)
+2024-04-16 00:03:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4288> (referer: https://www.noelleeming.co.nz/search?q=&start=4256)
+2024-04-16 00:03:37 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4320> (referer: https://www.noelleeming.co.nz/search?q=&start=4288)
+2024-04-16 00:03:38 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4352> (referer: https://www.noelleeming.co.nz/search?q=&start=4320)
+2024-04-16 00:03:39 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4384> (referer: https://www.noelleeming.co.nz/search?q=&start=4352)
+2024-04-16 00:03:40 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4416> (referer: https://www.noelleeming.co.nz/search?q=&start=4384)
+2024-04-16 00:03:41 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4448> (referer: https://www.noelleeming.co.nz/search?q=&start=4416)
+2024-04-16 00:03:42 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4480> (referer: https://www.noelleeming.co.nz/search?q=&start=4448)
+2024-04-16 00:03:43 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4512> (referer: https://www.noelleeming.co.nz/search?q=&start=4480)
+2024-04-16 00:03:43 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4544> (referer: https://www.noelleeming.co.nz/search?q=&start=4512)
+2024-04-16 00:03:44 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4576> (referer: https://www.noelleeming.co.nz/search?q=&start=4544)
+2024-04-16 00:03:45 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4608> (referer: https://www.noelleeming.co.nz/search?q=&start=4576)
+2024-04-16 00:03:46 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4640> (referer: https://www.noelleeming.co.nz/search?q=&start=4608)
+2024-04-16 00:03:47 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4672> (referer: https://www.noelleeming.co.nz/search?q=&start=4640)
+2024-04-16 00:03:48 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4704> (referer: https://www.noelleeming.co.nz/search?q=&start=4672)
+2024-04-16 00:03:49 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4736> (referer: https://www.noelleeming.co.nz/search?q=&start=4704)
+2024-04-16 00:03:50 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4768> (referer: https://www.noelleeming.co.nz/search?q=&start=4736)
+2024-04-16 00:03:51 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4800> (referer: https://www.noelleeming.co.nz/search?q=&start=4768)
+2024-04-16 00:03:51 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4832> (referer: https://www.noelleeming.co.nz/search?q=&start=4800)
+2024-04-16 00:03:52 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4864> (referer: https://www.noelleeming.co.nz/search?q=&start=4832)
+2024-04-16 00:03:53 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4896> (referer: https://www.noelleeming.co.nz/search?q=&start=4864)
+2024-04-16 00:03:54 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4928> (referer: https://www.noelleeming.co.nz/search?q=&start=4896)
+2024-04-16 00:03:55 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4960> (referer: https://www.noelleeming.co.nz/search?q=&start=4928)
+2024-04-16 00:03:55 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4992> (referer: https://www.noelleeming.co.nz/search?q=&start=4960)
+2024-04-16 00:03:56 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5024> (referer: https://www.noelleeming.co.nz/search?q=&start=4992)
+2024-04-16 00:03:57 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5056> (referer: https://www.noelleeming.co.nz/search?q=&start=5024)
+2024-04-16 00:03:58 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5088> (referer: https://www.noelleeming.co.nz/search?q=&start=5056)
+2024-04-16 00:03:59 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:03:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5120> (referer: https://www.noelleeming.co.nz/search?q=&start=5088)
+2024-04-16 00:04:00 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:04:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5152> (referer: https://www.noelleeming.co.nz/search?q=&start=5120)
+2024-04-16 00:04:01 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:04:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5184> (referer: https://www.noelleeming.co.nz/search?q=&start=5152)
+2024-04-16 00:04:02 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:04:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5216> (referer: https://www.noelleeming.co.nz/search?q=&start=5184)
+2024-04-16 00:04:02 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:04:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5248> (referer: https://www.noelleeming.co.nz/search?q=&start=5216)
+2024-04-16 00:04:03 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:04:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5280> (referer: https://www.noelleeming.co.nz/search?q=&start=5248)
+2024-04-16 00:04:04 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:04:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5312> (referer: https://www.noelleeming.co.nz/search?q=&start=5280)
+2024-04-16 00:04:05 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:04:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5344> (referer: https://www.noelleeming.co.nz/search?q=&start=5312)
+2024-04-16 00:04:06 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:04:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5376> (referer: https://www.noelleeming.co.nz/search?q=&start=5344)
+2024-04-16 00:04:07 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:04:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5408> (referer: https://www.noelleeming.co.nz/search?q=&start=5376)
+2024-04-16 00:04:07 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:04:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5440> (referer: https://www.noelleeming.co.nz/search?q=&start=5408)
+2024-04-16 00:04:08 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:04:08 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-04-16 00:04:08 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 184618,
+ 'downloader/request_count': 171,
+ 'downloader/request_method_count/GET': 171,
+ 'downloader/response_bytes': 12706030,
+ 'downloader/response_count': 171,
+ 'downloader/response_status_count/200': 171,
+ 'elapsed_time_seconds': 151.53244,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 4, 15, 12, 4, 8, 496930, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 141665593,
+ 'httpcompression/response_count': 171,
+ 'log_count/DEBUG': 345,
+ 'log_count/INFO': 12,
+ 'request_depth_max': 170,
+ 'response_received_count': 171,
+ 'scheduler/dequeued': 171,
+ 'scheduler/dequeued/memory': 171,
+ 'scheduler/enqueued': 171,
+ 'scheduler/enqueued/memory': 171,
+ 'start_time': datetime.datetime(2024, 4, 15, 12, 1, 36, 964490, tzinfo=datetime.timezone.utc)}
+2024-04-16 00:04:08 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-04-16 00:18:00 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scrape01)
+2024-04-16 00:18:00 [scrapy.utils.log] INFO: Versions: lxml 5.2.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.0, w3lib 2.1.2, Twisted 24.3.0, Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.5, Platform Windows-10-10.0.19045-SP0
+2024-04-16 00:18:05 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-04-16 00:18:05 [asyncio] DEBUG: Using selector: SelectSelector
+2024-04-16 00:18:05 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-04-16 00:18:05 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-04-16 00:18:05 [scrapy.extensions.telnet] INFO: Telnet Password: 5f5c34abd18b0eb9
+2024-04-16 00:18:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-04-16 00:18:05 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrape01',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'scrape01.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['scrape01.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-04-16 00:18:05 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-04-16 00:18:05 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-04-16 00:18:05 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-04-16 00:18:05 [scrapy.core.engine] INFO: Spider opened
+2024-04-16 00:18:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-04-16 00:18:05 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-04-16 00:18:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=0> (referer: None)
+2024-04-16 00:18:06 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=32> (referer: https://www.noelleeming.co.nz/search?q=&start=0)
+2024-04-16 00:18:07 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=64> (referer: https://www.noelleeming.co.nz/search?q=&start=32)
+2024-04-16 00:18:08 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=96> (referer: https://www.noelleeming.co.nz/search?q=&start=64)
+2024-04-16 00:18:09 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=128> (referer: https://www.noelleeming.co.nz/search?q=&start=96)
+2024-04-16 00:18:10 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=160> (referer: https://www.noelleeming.co.nz/search?q=&start=128)
+2024-04-16 00:18:11 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=192> (referer: https://www.noelleeming.co.nz/search?q=&start=160)
+2024-04-16 00:18:12 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=224> (referer: https://www.noelleeming.co.nz/search?q=&start=192)
+2024-04-16 00:18:12 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=256> (referer: https://www.noelleeming.co.nz/search?q=&start=224)
+2024-04-16 00:18:13 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=288> (referer: https://www.noelleeming.co.nz/search?q=&start=256)
+2024-04-16 00:18:14 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=320> (referer: https://www.noelleeming.co.nz/search?q=&start=288)
+2024-04-16 00:18:15 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=352> (referer: https://www.noelleeming.co.nz/search?q=&start=320)
+2024-04-16 00:18:16 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=384> (referer: https://www.noelleeming.co.nz/search?q=&start=352)
+2024-04-16 00:18:17 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=416> (referer: https://www.noelleeming.co.nz/search?q=&start=384)
+2024-04-16 00:18:18 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=448> (referer: https://www.noelleeming.co.nz/search?q=&start=416)
+2024-04-16 00:18:19 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=480> (referer: https://www.noelleeming.co.nz/search?q=&start=448)
+2024-04-16 00:18:20 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=512> (referer: https://www.noelleeming.co.nz/search?q=&start=480)
+2024-04-16 00:18:21 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=544> (referer: https://www.noelleeming.co.nz/search?q=&start=512)
+2024-04-16 00:18:22 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=576> (referer: https://www.noelleeming.co.nz/search?q=&start=544)
+2024-04-16 00:18:23 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=608> (referer: https://www.noelleeming.co.nz/search?q=&start=576)
+2024-04-16 00:18:24 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=640> (referer: https://www.noelleeming.co.nz/search?q=&start=608)
+2024-04-16 00:18:25 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=672> (referer: https://www.noelleeming.co.nz/search?q=&start=640)
+2024-04-16 00:18:25 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=704> (referer: https://www.noelleeming.co.nz/search?q=&start=672)
+2024-04-16 00:18:26 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=736> (referer: https://www.noelleeming.co.nz/search?q=&start=704)
+2024-04-16 00:18:27 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=768> (referer: https://www.noelleeming.co.nz/search?q=&start=736)
+2024-04-16 00:18:28 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=800> (referer: https://www.noelleeming.co.nz/search?q=&start=768)
+2024-04-16 00:18:29 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=832> (referer: https://www.noelleeming.co.nz/search?q=&start=800)
+2024-04-16 00:18:30 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=864> (referer: https://www.noelleeming.co.nz/search?q=&start=832)
+2024-04-16 00:18:31 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=896> (referer: https://www.noelleeming.co.nz/search?q=&start=864)
+2024-04-16 00:18:32 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=928> (referer: https://www.noelleeming.co.nz/search?q=&start=896)
+2024-04-16 00:18:33 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=960> (referer: https://www.noelleeming.co.nz/search?q=&start=928)
+2024-04-16 00:18:34 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=992> (referer: https://www.noelleeming.co.nz/search?q=&start=960)
+2024-04-16 00:18:34 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1024> (referer: https://www.noelleeming.co.nz/search?q=&start=992)
+2024-04-16 00:18:35 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1056> (referer: https://www.noelleeming.co.nz/search?q=&start=1024)
+2024-04-16 00:18:36 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1088> (referer: https://www.noelleeming.co.nz/search?q=&start=1056)
+2024-04-16 00:18:37 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1120> (referer: https://www.noelleeming.co.nz/search?q=&start=1088)
+2024-04-16 00:18:38 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1152> (referer: https://www.noelleeming.co.nz/search?q=&start=1120)
+2024-04-16 00:18:39 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1184> (referer: https://www.noelleeming.co.nz/search?q=&start=1152)
+2024-04-16 00:18:40 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1216> (referer: https://www.noelleeming.co.nz/search?q=&start=1184)
+2024-04-16 00:18:41 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1248> (referer: https://www.noelleeming.co.nz/search?q=&start=1216)
+2024-04-16 00:18:42 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1280> (referer: https://www.noelleeming.co.nz/search?q=&start=1248)
+2024-04-16 00:18:43 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1312> (referer: https://www.noelleeming.co.nz/search?q=&start=1280)
+2024-04-16 00:18:43 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1344> (referer: https://www.noelleeming.co.nz/search?q=&start=1312)
+2024-04-16 00:18:44 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1376> (referer: https://www.noelleeming.co.nz/search?q=&start=1344)
+2024-04-16 00:18:45 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1408> (referer: https://www.noelleeming.co.nz/search?q=&start=1376)
+2024-04-16 00:18:46 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1440> (referer: https://www.noelleeming.co.nz/search?q=&start=1408)
+2024-04-16 00:18:48 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1472> (referer: https://www.noelleeming.co.nz/search?q=&start=1440)
+2024-04-16 00:18:48 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1504> (referer: https://www.noelleeming.co.nz/search?q=&start=1472)
+2024-04-16 00:18:49 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1536> (referer: https://www.noelleeming.co.nz/search?q=&start=1504)
+2024-04-16 00:18:50 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1568> (referer: https://www.noelleeming.co.nz/search?q=&start=1536)
+2024-04-16 00:18:51 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1600> (referer: https://www.noelleeming.co.nz/search?q=&start=1568)
+2024-04-16 00:18:52 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1632> (referer: https://www.noelleeming.co.nz/search?q=&start=1600)
+2024-04-16 00:18:53 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1664> (referer: https://www.noelleeming.co.nz/search?q=&start=1632)
+2024-04-16 00:18:54 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1696> (referer: https://www.noelleeming.co.nz/search?q=&start=1664)
+2024-04-16 00:18:54 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1728> (referer: https://www.noelleeming.co.nz/search?q=&start=1696)
+2024-04-16 00:18:55 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1760> (referer: https://www.noelleeming.co.nz/search?q=&start=1728)
+2024-04-16 00:18:56 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1792> (referer: https://www.noelleeming.co.nz/search?q=&start=1760)
+2024-04-16 00:18:57 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1824> (referer: https://www.noelleeming.co.nz/search?q=&start=1792)
+2024-04-16 00:18:58 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:18:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1856> (referer: https://www.noelleeming.co.nz/search?q=&start=1824)
+2024-04-16 00:18:59 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1888> (referer: https://www.noelleeming.co.nz/search?q=&start=1856)
+2024-04-16 00:19:00 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1920> (referer: https://www.noelleeming.co.nz/search?q=&start=1888)
+2024-04-16 00:19:00 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1952> (referer: https://www.noelleeming.co.nz/search?q=&start=1920)
+2024-04-16 00:19:01 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1984> (referer: https://www.noelleeming.co.nz/search?q=&start=1952)
+2024-04-16 00:19:02 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2016> (referer: https://www.noelleeming.co.nz/search?q=&start=1984)
+2024-04-16 00:19:03 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2048> (referer: https://www.noelleeming.co.nz/search?q=&start=2016)
+2024-04-16 00:19:04 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2080> (referer: https://www.noelleeming.co.nz/search?q=&start=2048)
+2024-04-16 00:19:05 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:05 [scrapy.extensions.logstats] INFO: Crawled 66 pages (at 66 pages/min), scraped 0 items (at 0 items/min)
+2024-04-16 00:19:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2112> (referer: https://www.noelleeming.co.nz/search?q=&start=2080)
+2024-04-16 00:19:06 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2144> (referer: https://www.noelleeming.co.nz/search?q=&start=2112)
+2024-04-16 00:19:07 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2176> (referer: https://www.noelleeming.co.nz/search?q=&start=2144)
+2024-04-16 00:19:08 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2208> (referer: https://www.noelleeming.co.nz/search?q=&start=2176)
+2024-04-16 00:19:08 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2240> (referer: https://www.noelleeming.co.nz/search?q=&start=2208)
+2024-04-16 00:19:09 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2272> (referer: https://www.noelleeming.co.nz/search?q=&start=2240)
+2024-04-16 00:19:10 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2304> (referer: https://www.noelleeming.co.nz/search?q=&start=2272)
+2024-04-16 00:19:11 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2336> (referer: https://www.noelleeming.co.nz/search?q=&start=2304)
+2024-04-16 00:19:12 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2368> (referer: https://www.noelleeming.co.nz/search?q=&start=2336)
+2024-04-16 00:19:13 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2400> (referer: https://www.noelleeming.co.nz/search?q=&start=2368)
+2024-04-16 00:19:14 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2432> (referer: https://www.noelleeming.co.nz/search?q=&start=2400)
+2024-04-16 00:19:14 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2464> (referer: https://www.noelleeming.co.nz/search?q=&start=2432)
+2024-04-16 00:19:15 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2496> (referer: https://www.noelleeming.co.nz/search?q=&start=2464)
+2024-04-16 00:19:16 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2528> (referer: https://www.noelleeming.co.nz/search?q=&start=2496)
+2024-04-16 00:19:17 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2560> (referer: https://www.noelleeming.co.nz/search?q=&start=2528)
+2024-04-16 00:19:18 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2592> (referer: https://www.noelleeming.co.nz/search?q=&start=2560)
+2024-04-16 00:19:19 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2624> (referer: https://www.noelleeming.co.nz/search?q=&start=2592)
+2024-04-16 00:19:19 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2656> (referer: https://www.noelleeming.co.nz/search?q=&start=2624)
+2024-04-16 00:19:20 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2688> (referer: https://www.noelleeming.co.nz/search?q=&start=2656)
+2024-04-16 00:19:21 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2720> (referer: https://www.noelleeming.co.nz/search?q=&start=2688)
+2024-04-16 00:19:22 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2752> (referer: https://www.noelleeming.co.nz/search?q=&start=2720)
+2024-04-16 00:19:23 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2784> (referer: https://www.noelleeming.co.nz/search?q=&start=2752)
+2024-04-16 00:19:24 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2816> (referer: https://www.noelleeming.co.nz/search?q=&start=2784)
+2024-04-16 00:19:25 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2848> (referer: https://www.noelleeming.co.nz/search?q=&start=2816)
+2024-04-16 00:19:26 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2880> (referer: https://www.noelleeming.co.nz/search?q=&start=2848)
+2024-04-16 00:19:26 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2912> (referer: https://www.noelleeming.co.nz/search?q=&start=2880)
+2024-04-16 00:19:27 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2944> (referer: https://www.noelleeming.co.nz/search?q=&start=2912)
+2024-04-16 00:19:28 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2976> (referer: https://www.noelleeming.co.nz/search?q=&start=2944)
+2024-04-16 00:19:29 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3008> (referer: https://www.noelleeming.co.nz/search?q=&start=2976)
+2024-04-16 00:19:30 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3040> (referer: https://www.noelleeming.co.nz/search?q=&start=3008)
+2024-04-16 00:19:31 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3072> (referer: https://www.noelleeming.co.nz/search?q=&start=3040)
+2024-04-16 00:19:32 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3104> (referer: https://www.noelleeming.co.nz/search?q=&start=3072)
+2024-04-16 00:19:33 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3136> (referer: https://www.noelleeming.co.nz/search?q=&start=3104)
+2024-04-16 00:19:34 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3168> (referer: https://www.noelleeming.co.nz/search?q=&start=3136)
+2024-04-16 00:19:34 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3200> (referer: https://www.noelleeming.co.nz/search?q=&start=3168)
+2024-04-16 00:19:35 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3232> (referer: https://www.noelleeming.co.nz/search?q=&start=3200)
+2024-04-16 00:19:36 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3264> (referer: https://www.noelleeming.co.nz/search?q=&start=3232)
+2024-04-16 00:19:37 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3296> (referer: https://www.noelleeming.co.nz/search?q=&start=3264)
+2024-04-16 00:19:38 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3328> (referer: https://www.noelleeming.co.nz/search?q=&start=3296)
+2024-04-16 00:19:39 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3360> (referer: https://www.noelleeming.co.nz/search?q=&start=3328)
+2024-04-16 00:19:40 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3392> (referer: https://www.noelleeming.co.nz/search?q=&start=3360)
+2024-04-16 00:19:41 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3424> (referer: https://www.noelleeming.co.nz/search?q=&start=3392)
+2024-04-16 00:19:41 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3456> (referer: https://www.noelleeming.co.nz/search?q=&start=3424)
+2024-04-16 00:19:42 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3488> (referer: https://www.noelleeming.co.nz/search?q=&start=3456)
+2024-04-16 00:19:43 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3520> (referer: https://www.noelleeming.co.nz/search?q=&start=3488)
+2024-04-16 00:19:44 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3552> (referer: https://www.noelleeming.co.nz/search?q=&start=3520)
+2024-04-16 00:19:45 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3584> (referer: https://www.noelleeming.co.nz/search?q=&start=3552)
+2024-04-16 00:19:46 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3616> (referer: https://www.noelleeming.co.nz/search?q=&start=3584)
+2024-04-16 00:19:46 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3648> (referer: https://www.noelleeming.co.nz/search?q=&start=3616)
+2024-04-16 00:19:47 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3680> (referer: https://www.noelleeming.co.nz/search?q=&start=3648)
+2024-04-16 00:19:48 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3712> (referer: https://www.noelleeming.co.nz/search?q=&start=3680)
+2024-04-16 00:19:49 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3744> (referer: https://www.noelleeming.co.nz/search?q=&start=3712)
+2024-04-16 00:19:50 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3776> (referer: https://www.noelleeming.co.nz/search?q=&start=3744)
+2024-04-16 00:19:51 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3808> (referer: https://www.noelleeming.co.nz/search?q=&start=3776)
+2024-04-16 00:19:51 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3840> (referer: https://www.noelleeming.co.nz/search?q=&start=3808)
+2024-04-16 00:19:52 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3872> (referer: https://www.noelleeming.co.nz/search?q=&start=3840)
+2024-04-16 00:19:53 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3904> (referer: https://www.noelleeming.co.nz/search?q=&start=3872)
+2024-04-16 00:19:54 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3936> (referer: https://www.noelleeming.co.nz/search?q=&start=3904)
+2024-04-16 00:19:55 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3968> (referer: https://www.noelleeming.co.nz/search?q=&start=3936)
+2024-04-16 00:19:56 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4000> (referer: https://www.noelleeming.co.nz/search?q=&start=3968)
+2024-04-16 00:19:57 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4032> (referer: https://www.noelleeming.co.nz/search?q=&start=4000)
+2024-04-16 00:19:57 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4064> (referer: https://www.noelleeming.co.nz/search?q=&start=4032)
+2024-04-16 00:19:58 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:19:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4096> (referer: https://www.noelleeming.co.nz/search?q=&start=4064)
+2024-04-16 00:19:59 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4128> (referer: https://www.noelleeming.co.nz/search?q=&start=4096)
+2024-04-16 00:20:00 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4160> (referer: https://www.noelleeming.co.nz/search?q=&start=4128)
+2024-04-16 00:20:01 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4192> (referer: https://www.noelleeming.co.nz/search?q=&start=4160)
+2024-04-16 00:20:02 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4224> (referer: https://www.noelleeming.co.nz/search?q=&start=4192)
+2024-04-16 00:20:02 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4256> (referer: https://www.noelleeming.co.nz/search?q=&start=4224)
+2024-04-16 00:20:03 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4288> (referer: https://www.noelleeming.co.nz/search?q=&start=4256)
+2024-04-16 00:20:04 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:05 [scrapy.extensions.logstats] INFO: Crawled 135 pages (at 69 pages/min), scraped 0 items (at 0 items/min)
+2024-04-16 00:20:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4320> (referer: https://www.noelleeming.co.nz/search?q=&start=4288)
+2024-04-16 00:20:05 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4352> (referer: https://www.noelleeming.co.nz/search?q=&start=4320)
+2024-04-16 00:20:06 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4384> (referer: https://www.noelleeming.co.nz/search?q=&start=4352)
+2024-04-16 00:20:07 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4416> (referer: https://www.noelleeming.co.nz/search?q=&start=4384)
+2024-04-16 00:20:08 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4448> (referer: https://www.noelleeming.co.nz/search?q=&start=4416)
+2024-04-16 00:20:09 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4480> (referer: https://www.noelleeming.co.nz/search?q=&start=4448)
+2024-04-16 00:20:10 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4512> (referer: https://www.noelleeming.co.nz/search?q=&start=4480)
+2024-04-16 00:20:10 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4544> (referer: https://www.noelleeming.co.nz/search?q=&start=4512)
+2024-04-16 00:20:11 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4576> (referer: https://www.noelleeming.co.nz/search?q=&start=4544)
+2024-04-16 00:20:12 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4608> (referer: https://www.noelleeming.co.nz/search?q=&start=4576)
+2024-04-16 00:20:13 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4640> (referer: https://www.noelleeming.co.nz/search?q=&start=4608)
+2024-04-16 00:20:14 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4672> (referer: https://www.noelleeming.co.nz/search?q=&start=4640)
+2024-04-16 00:20:15 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4704> (referer: https://www.noelleeming.co.nz/search?q=&start=4672)
+2024-04-16 00:20:16 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4736> (referer: https://www.noelleeming.co.nz/search?q=&start=4704)
+2024-04-16 00:20:16 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4768> (referer: https://www.noelleeming.co.nz/search?q=&start=4736)
+2024-04-16 00:20:17 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4800> (referer: https://www.noelleeming.co.nz/search?q=&start=4768)
+2024-04-16 00:20:18 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4832> (referer: https://www.noelleeming.co.nz/search?q=&start=4800)
+2024-04-16 00:20:19 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4864> (referer: https://www.noelleeming.co.nz/search?q=&start=4832)
+2024-04-16 00:20:20 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4896> (referer: https://www.noelleeming.co.nz/search?q=&start=4864)
+2024-04-16 00:20:21 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4928> (referer: https://www.noelleeming.co.nz/search?q=&start=4896)
+2024-04-16 00:20:21 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4960> (referer: https://www.noelleeming.co.nz/search?q=&start=4928)
+2024-04-16 00:20:22 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4992> (referer: https://www.noelleeming.co.nz/search?q=&start=4960)
+2024-04-16 00:20:23 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5024> (referer: https://www.noelleeming.co.nz/search?q=&start=4992)
+2024-04-16 00:20:24 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5056> (referer: https://www.noelleeming.co.nz/search?q=&start=5024)
+2024-04-16 00:20:25 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5088> (referer: https://www.noelleeming.co.nz/search?q=&start=5056)
+2024-04-16 00:20:26 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5120> (referer: https://www.noelleeming.co.nz/search?q=&start=5088)
+2024-04-16 00:20:27 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5152> (referer: https://www.noelleeming.co.nz/search?q=&start=5120)
+2024-04-16 00:20:27 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5184> (referer: https://www.noelleeming.co.nz/search?q=&start=5152)
+2024-04-16 00:20:28 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5216> (referer: https://www.noelleeming.co.nz/search?q=&start=5184)
+2024-04-16 00:20:29 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5248> (referer: https://www.noelleeming.co.nz/search?q=&start=5216)
+2024-04-16 00:20:30 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5280> (referer: https://www.noelleeming.co.nz/search?q=&start=5248)
+2024-04-16 00:20:31 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5312> (referer: https://www.noelleeming.co.nz/search?q=&start=5280)
+2024-04-16 00:20:32 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5344> (referer: https://www.noelleeming.co.nz/search?q=&start=5312)
+2024-04-16 00:20:32 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5376> (referer: https://www.noelleeming.co.nz/search?q=&start=5344)
+2024-04-16 00:20:33 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5408> (referer: https://www.noelleeming.co.nz/search?q=&start=5376)
+2024-04-16 00:20:35 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5440> (referer: https://www.noelleeming.co.nz/search?q=&start=5408)
+2024-04-16 00:20:35 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:20:35 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-04-16 00:20:35 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 184618,
+ 'downloader/request_count': 171,
+ 'downloader/request_method_count/GET': 171,
+ 'downloader/response_bytes': 12702126,
+ 'downloader/response_count': 171,
+ 'downloader/response_status_count/200': 171,
+ 'elapsed_time_seconds': 150.220157,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 4, 15, 12, 20, 35, 694365, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 141571512,
+ 'httpcompression/response_count': 171,
+ 'log_count/DEBUG': 345,
+ 'log_count/INFO': 12,
+ 'request_depth_max': 170,
+ 'response_received_count': 171,
+ 'scheduler/dequeued': 171,
+ 'scheduler/dequeued/memory': 171,
+ 'scheduler/enqueued': 171,
+ 'scheduler/enqueued/memory': 171,
+ 'start_time': datetime.datetime(2024, 4, 15, 12, 18, 5, 474208, tzinfo=datetime.timezone.utc)}
+2024-04-16 00:20:35 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-04-16 00:40:42 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scrape01)
+2024-04-16 00:40:42 [scrapy.utils.log] INFO: Versions: lxml 5.2.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.0, w3lib 2.1.2, Twisted 24.3.0, Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.5, Platform Windows-10-10.0.19045-SP0
+2024-04-16 00:40:42 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-04-16 00:40:42 [asyncio] DEBUG: Using selector: SelectSelector
+2024-04-16 00:40:42 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-04-16 00:40:42 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-04-16 00:40:42 [scrapy.extensions.telnet] INFO: Telnet Password: a0696d6f1e9b604f
+2024-04-16 00:40:42 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-04-16 00:40:42 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrape01',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'scrape01.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['scrape01.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-04-16 00:40:42 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-04-16 00:40:42 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-04-16 00:40:42 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-04-16 00:40:42 [scrapy.core.engine] INFO: Spider opened
+2024-04-16 00:40:42 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-04-16 00:40:42 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-04-16 00:40:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=0> (referer: None)
+2024-04-16 00:40:44 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:40:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=32> (referer: https://www.noelleeming.co.nz/search?q=&start=0)
+2024-04-16 00:40:45 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:40:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=64> (referer: https://www.noelleeming.co.nz/search?q=&start=32)
+2024-04-16 00:40:46 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:40:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=96> (referer: https://www.noelleeming.co.nz/search?q=&start=64)
+2024-04-16 00:40:47 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:40:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=128> (referer: https://www.noelleeming.co.nz/search?q=&start=96)
+2024-04-16 00:40:48 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:40:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=160> (referer: https://www.noelleeming.co.nz/search?q=&start=128)
+2024-04-16 00:40:49 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:40:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=192> (referer: https://www.noelleeming.co.nz/search?q=&start=160)
+2024-04-16 00:40:50 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:40:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=224> (referer: https://www.noelleeming.co.nz/search?q=&start=192)
+2024-04-16 00:40:52 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:40:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=256> (referer: https://www.noelleeming.co.nz/search?q=&start=224)
+2024-04-16 00:40:53 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:40:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=288> (referer: https://www.noelleeming.co.nz/search?q=&start=256)
+2024-04-16 00:40:54 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:40:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=320> (referer: https://www.noelleeming.co.nz/search?q=&start=288)
+2024-04-16 00:40:55 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:40:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=352> (referer: https://www.noelleeming.co.nz/search?q=&start=320)
+2024-04-16 00:40:56 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:40:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=384> (referer: https://www.noelleeming.co.nz/search?q=&start=352)
+2024-04-16 00:40:57 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:40:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=416> (referer: https://www.noelleeming.co.nz/search?q=&start=384)
+2024-04-16 00:40:58 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:40:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=448> (referer: https://www.noelleeming.co.nz/search?q=&start=416)
+2024-04-16 00:40:59 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=480> (referer: https://www.noelleeming.co.nz/search?q=&start=448)
+2024-04-16 00:41:00 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=512> (referer: https://www.noelleeming.co.nz/search?q=&start=480)
+2024-04-16 00:41:01 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=544> (referer: https://www.noelleeming.co.nz/search?q=&start=512)
+2024-04-16 00:41:02 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=576> (referer: https://www.noelleeming.co.nz/search?q=&start=544)
+2024-04-16 00:41:03 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=608> (referer: https://www.noelleeming.co.nz/search?q=&start=576)
+2024-04-16 00:41:04 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=640> (referer: https://www.noelleeming.co.nz/search?q=&start=608)
+2024-04-16 00:41:05 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=672> (referer: https://www.noelleeming.co.nz/search?q=&start=640)
+2024-04-16 00:41:06 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=704> (referer: https://www.noelleeming.co.nz/search?q=&start=672)
+2024-04-16 00:41:07 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=736> (referer: https://www.noelleeming.co.nz/search?q=&start=704)
+2024-04-16 00:41:08 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=768> (referer: https://www.noelleeming.co.nz/search?q=&start=736)
+2024-04-16 00:41:09 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=800> (referer: https://www.noelleeming.co.nz/search?q=&start=768)
+2024-04-16 00:41:10 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=832> (referer: https://www.noelleeming.co.nz/search?q=&start=800)
+2024-04-16 00:41:11 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=864> (referer: https://www.noelleeming.co.nz/search?q=&start=832)
+2024-04-16 00:41:12 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=896> (referer: https://www.noelleeming.co.nz/search?q=&start=864)
+2024-04-16 00:41:13 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=928> (referer: https://www.noelleeming.co.nz/search?q=&start=896)
+2024-04-16 00:41:14 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=960> (referer: https://www.noelleeming.co.nz/search?q=&start=928)
+2024-04-16 00:41:15 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=992> (referer: https://www.noelleeming.co.nz/search?q=&start=960)
+2024-04-16 00:41:16 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1024> (referer: https://www.noelleeming.co.nz/search?q=&start=992)
+2024-04-16 00:41:17 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1056> (referer: https://www.noelleeming.co.nz/search?q=&start=1024)
+2024-04-16 00:41:18 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1088> (referer: https://www.noelleeming.co.nz/search?q=&start=1056)
+2024-04-16 00:41:19 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1120> (referer: https://www.noelleeming.co.nz/search?q=&start=1088)
+2024-04-16 00:41:20 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1152> (referer: https://www.noelleeming.co.nz/search?q=&start=1120)
+2024-04-16 00:41:21 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1184> (referer: https://www.noelleeming.co.nz/search?q=&start=1152)
+2024-04-16 00:41:22 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1216> (referer: https://www.noelleeming.co.nz/search?q=&start=1184)
+2024-04-16 00:41:23 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1248> (referer: https://www.noelleeming.co.nz/search?q=&start=1216)
+2024-04-16 00:41:24 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1280> (referer: https://www.noelleeming.co.nz/search?q=&start=1248)
+2024-04-16 00:41:25 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1312> (referer: https://www.noelleeming.co.nz/search?q=&start=1280)
+2024-04-16 00:41:26 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1344> (referer: https://www.noelleeming.co.nz/search?q=&start=1312)
+2024-04-16 00:41:26 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1376> (referer: https://www.noelleeming.co.nz/search?q=&start=1344)
+2024-04-16 00:41:27 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1408> (referer: https://www.noelleeming.co.nz/search?q=&start=1376)
+2024-04-16 00:41:28 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1440> (referer: https://www.noelleeming.co.nz/search?q=&start=1408)
+2024-04-16 00:41:29 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1472> (referer: https://www.noelleeming.co.nz/search?q=&start=1440)
+2024-04-16 00:41:30 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1504> (referer: https://www.noelleeming.co.nz/search?q=&start=1472)
+2024-04-16 00:41:31 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1536> (referer: https://www.noelleeming.co.nz/search?q=&start=1504)
+2024-04-16 00:41:32 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1568> (referer: https://www.noelleeming.co.nz/search?q=&start=1536)
+2024-04-16 00:41:33 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1600> (referer: https://www.noelleeming.co.nz/search?q=&start=1568)
+2024-04-16 00:41:34 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1632> (referer: https://www.noelleeming.co.nz/search?q=&start=1600)
+2024-04-16 00:41:35 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1664> (referer: https://www.noelleeming.co.nz/search?q=&start=1632)
+2024-04-16 00:41:35 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1696> (referer: https://www.noelleeming.co.nz/search?q=&start=1664)
+2024-04-16 00:41:36 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1728> (referer: https://www.noelleeming.co.nz/search?q=&start=1696)
+2024-04-16 00:41:37 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1760> (referer: https://www.noelleeming.co.nz/search?q=&start=1728)
+2024-04-16 00:41:38 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1792> (referer: https://www.noelleeming.co.nz/search?q=&start=1760)
+2024-04-16 00:41:39 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1824> (referer: https://www.noelleeming.co.nz/search?q=&start=1792)
+2024-04-16 00:41:40 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1856> (referer: https://www.noelleeming.co.nz/search?q=&start=1824)
+2024-04-16 00:41:41 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1888> (referer: https://www.noelleeming.co.nz/search?q=&start=1856)
+2024-04-16 00:41:42 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:42 [scrapy.extensions.logstats] INFO: Crawled 60 pages (at 60 pages/min), scraped 0 items (at 0 items/min)
+2024-04-16 00:41:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1920> (referer: https://www.noelleeming.co.nz/search?q=&start=1888)
+2024-04-16 00:41:43 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1952> (referer: https://www.noelleeming.co.nz/search?q=&start=1920)
+2024-04-16 00:41:43 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1984> (referer: https://www.noelleeming.co.nz/search?q=&start=1952)
+2024-04-16 00:41:45 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2016> (referer: https://www.noelleeming.co.nz/search?q=&start=1984)
+2024-04-16 00:41:45 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2048> (referer: https://www.noelleeming.co.nz/search?q=&start=2016)
+2024-04-16 00:41:46 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2080> (referer: https://www.noelleeming.co.nz/search?q=&start=2048)
+2024-04-16 00:41:47 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2112> (referer: https://www.noelleeming.co.nz/search?q=&start=2080)
+2024-04-16 00:41:48 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2144> (referer: https://www.noelleeming.co.nz/search?q=&start=2112)
+2024-04-16 00:41:49 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2176> (referer: https://www.noelleeming.co.nz/search?q=&start=2144)
+2024-04-16 00:41:50 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2208> (referer: https://www.noelleeming.co.nz/search?q=&start=2176)
+2024-04-16 00:41:51 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2240> (referer: https://www.noelleeming.co.nz/search?q=&start=2208)
+2024-04-16 00:41:52 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2272> (referer: https://www.noelleeming.co.nz/search?q=&start=2240)
+2024-04-16 00:41:53 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2304> (referer: https://www.noelleeming.co.nz/search?q=&start=2272)
+2024-04-16 00:41:54 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2336> (referer: https://www.noelleeming.co.nz/search?q=&start=2304)
+2024-04-16 00:41:55 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2368> (referer: https://www.noelleeming.co.nz/search?q=&start=2336)
+2024-04-16 00:41:56 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2400> (referer: https://www.noelleeming.co.nz/search?q=&start=2368)
+2024-04-16 00:41:57 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2432> (referer: https://www.noelleeming.co.nz/search?q=&start=2400)
+2024-04-16 00:41:58 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2464> (referer: https://www.noelleeming.co.nz/search?q=&start=2432)
+2024-04-16 00:41:59 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:41:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2496> (referer: https://www.noelleeming.co.nz/search?q=&start=2464)
+2024-04-16 00:41:59 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2528> (referer: https://www.noelleeming.co.nz/search?q=&start=2496)
+2024-04-16 00:42:00 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2560> (referer: https://www.noelleeming.co.nz/search?q=&start=2528)
+2024-04-16 00:42:01 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2592> (referer: https://www.noelleeming.co.nz/search?q=&start=2560)
+2024-04-16 00:42:02 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2624> (referer: https://www.noelleeming.co.nz/search?q=&start=2592)
+2024-04-16 00:42:03 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2656> (referer: https://www.noelleeming.co.nz/search?q=&start=2624)
+2024-04-16 00:42:04 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2688> (referer: https://www.noelleeming.co.nz/search?q=&start=2656)
+2024-04-16 00:42:05 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2720> (referer: https://www.noelleeming.co.nz/search?q=&start=2688)
+2024-04-16 00:42:06 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2752> (referer: https://www.noelleeming.co.nz/search?q=&start=2720)
+2024-04-16 00:42:07 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2784> (referer: https://www.noelleeming.co.nz/search?q=&start=2752)
+2024-04-16 00:42:07 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2816> (referer: https://www.noelleeming.co.nz/search?q=&start=2784)
+2024-04-16 00:42:08 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2848> (referer: https://www.noelleeming.co.nz/search?q=&start=2816)
+2024-04-16 00:42:09 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2880> (referer: https://www.noelleeming.co.nz/search?q=&start=2848)
+2024-04-16 00:42:10 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2912> (referer: https://www.noelleeming.co.nz/search?q=&start=2880)
+2024-04-16 00:42:11 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2944> (referer: https://www.noelleeming.co.nz/search?q=&start=2912)
+2024-04-16 00:42:12 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2976> (referer: https://www.noelleeming.co.nz/search?q=&start=2944)
+2024-04-16 00:42:13 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3008> (referer: https://www.noelleeming.co.nz/search?q=&start=2976)
+2024-04-16 00:42:14 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3040> (referer: https://www.noelleeming.co.nz/search?q=&start=3008)
+2024-04-16 00:42:15 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3072> (referer: https://www.noelleeming.co.nz/search?q=&start=3040)
+2024-04-16 00:42:16 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3104> (referer: https://www.noelleeming.co.nz/search?q=&start=3072)
+2024-04-16 00:42:17 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3136> (referer: https://www.noelleeming.co.nz/search?q=&start=3104)
+2024-04-16 00:42:18 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3168> (referer: https://www.noelleeming.co.nz/search?q=&start=3136)
+2024-04-16 00:42:19 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3200> (referer: https://www.noelleeming.co.nz/search?q=&start=3168)
+2024-04-16 00:42:20 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3232> (referer: https://www.noelleeming.co.nz/search?q=&start=3200)
+2024-04-16 00:42:21 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3264> (referer: https://www.noelleeming.co.nz/search?q=&start=3232)
+2024-04-16 00:42:22 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3296> (referer: https://www.noelleeming.co.nz/search?q=&start=3264)
+2024-04-16 00:42:23 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3328> (referer: https://www.noelleeming.co.nz/search?q=&start=3296)
+2024-04-16 00:42:24 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3360> (referer: https://www.noelleeming.co.nz/search?q=&start=3328)
+2024-04-16 00:42:25 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3392> (referer: https://www.noelleeming.co.nz/search?q=&start=3360)
+2024-04-16 00:42:26 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3424> (referer: https://www.noelleeming.co.nz/search?q=&start=3392)
+2024-04-16 00:42:27 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3456> (referer: https://www.noelleeming.co.nz/search?q=&start=3424)
+2024-04-16 00:42:28 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3488> (referer: https://www.noelleeming.co.nz/search?q=&start=3456)
+2024-04-16 00:42:29 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3520> (referer: https://www.noelleeming.co.nz/search?q=&start=3488)
+2024-04-16 00:42:29 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3552> (referer: https://www.noelleeming.co.nz/search?q=&start=3520)
+2024-04-16 00:42:30 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3584> (referer: https://www.noelleeming.co.nz/search?q=&start=3552)
+2024-04-16 00:42:31 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3616> (referer: https://www.noelleeming.co.nz/search?q=&start=3584)
+2024-04-16 00:42:32 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3648> (referer: https://www.noelleeming.co.nz/search?q=&start=3616)
+2024-04-16 00:42:33 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3680> (referer: https://www.noelleeming.co.nz/search?q=&start=3648)
+2024-04-16 00:42:34 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3712> (referer: https://www.noelleeming.co.nz/search?q=&start=3680)
+2024-04-16 00:42:35 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3744> (referer: https://www.noelleeming.co.nz/search?q=&start=3712)
+2024-04-16 00:42:36 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3776> (referer: https://www.noelleeming.co.nz/search?q=&start=3744)
+2024-04-16 00:42:37 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3808> (referer: https://www.noelleeming.co.nz/search?q=&start=3776)
+2024-04-16 00:42:38 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3840> (referer: https://www.noelleeming.co.nz/search?q=&start=3808)
+2024-04-16 00:42:39 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3872> (referer: https://www.noelleeming.co.nz/search?q=&start=3840)
+2024-04-16 00:42:39 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3904> (referer: https://www.noelleeming.co.nz/search?q=&start=3872)
+2024-04-16 00:42:40 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3936> (referer: https://www.noelleeming.co.nz/search?q=&start=3904)
+2024-04-16 00:42:41 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3968> (referer: https://www.noelleeming.co.nz/search?q=&start=3936)
+2024-04-16 00:42:42 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:42 [scrapy.extensions.logstats] INFO: Crawled 125 pages (at 65 pages/min), scraped 0 items (at 0 items/min)
+2024-04-16 00:42:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4000> (referer: https://www.noelleeming.co.nz/search?q=&start=3968)
+2024-04-16 00:42:43 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4032> (referer: https://www.noelleeming.co.nz/search?q=&start=4000)
+2024-04-16 00:42:44 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4064> (referer: https://www.noelleeming.co.nz/search?q=&start=4032)
+2024-04-16 00:42:45 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4096> (referer: https://www.noelleeming.co.nz/search?q=&start=4064)
+2024-04-16 00:42:46 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4128> (referer: https://www.noelleeming.co.nz/search?q=&start=4096)
+2024-04-16 00:42:46 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4160> (referer: https://www.noelleeming.co.nz/search?q=&start=4128)
+2024-04-16 00:42:47 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4192> (referer: https://www.noelleeming.co.nz/search?q=&start=4160)
+2024-04-16 00:42:48 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4224> (referer: https://www.noelleeming.co.nz/search?q=&start=4192)
+2024-04-16 00:42:49 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4256> (referer: https://www.noelleeming.co.nz/search?q=&start=4224)
+2024-04-16 00:42:50 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4288> (referer: https://www.noelleeming.co.nz/search?q=&start=4256)
+2024-04-16 00:42:51 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4320> (referer: https://www.noelleeming.co.nz/search?q=&start=4288)
+2024-04-16 00:42:52 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4352> (referer: https://www.noelleeming.co.nz/search?q=&start=4320)
+2024-04-16 00:42:53 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4384> (referer: https://www.noelleeming.co.nz/search?q=&start=4352)
+2024-04-16 00:42:54 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4416> (referer: https://www.noelleeming.co.nz/search?q=&start=4384)
+2024-04-16 00:42:55 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4448> (referer: https://www.noelleeming.co.nz/search?q=&start=4416)
+2024-04-16 00:42:55 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4480> (referer: https://www.noelleeming.co.nz/search?q=&start=4448)
+2024-04-16 00:42:56 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4512> (referer: https://www.noelleeming.co.nz/search?q=&start=4480)
+2024-04-16 00:42:57 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4544> (referer: https://www.noelleeming.co.nz/search?q=&start=4512)
+2024-04-16 00:42:58 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:42:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4576> (referer: https://www.noelleeming.co.nz/search?q=&start=4544)
+2024-04-16 00:42:59 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4608> (referer: https://www.noelleeming.co.nz/search?q=&start=4576)
+2024-04-16 00:43:00 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4640> (referer: https://www.noelleeming.co.nz/search?q=&start=4608)
+2024-04-16 00:43:01 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4672> (referer: https://www.noelleeming.co.nz/search?q=&start=4640)
+2024-04-16 00:43:02 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4704> (referer: https://www.noelleeming.co.nz/search?q=&start=4672)
+2024-04-16 00:43:03 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4736> (referer: https://www.noelleeming.co.nz/search?q=&start=4704)
+2024-04-16 00:43:04 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4768> (referer: https://www.noelleeming.co.nz/search?q=&start=4736)
+2024-04-16 00:43:04 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4800> (referer: https://www.noelleeming.co.nz/search?q=&start=4768)
+2024-04-16 00:43:05 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4832> (referer: https://www.noelleeming.co.nz/search?q=&start=4800)
+2024-04-16 00:43:06 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4864> (referer: https://www.noelleeming.co.nz/search?q=&start=4832)
+2024-04-16 00:43:07 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4896> (referer: https://www.noelleeming.co.nz/search?q=&start=4864)
+2024-04-16 00:43:08 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4928> (referer: https://www.noelleeming.co.nz/search?q=&start=4896)
+2024-04-16 00:43:09 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4960> (referer: https://www.noelleeming.co.nz/search?q=&start=4928)
+2024-04-16 00:43:10 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4992> (referer: https://www.noelleeming.co.nz/search?q=&start=4960)
+2024-04-16 00:43:11 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5024> (referer: https://www.noelleeming.co.nz/search?q=&start=4992)
+2024-04-16 00:43:12 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5056> (referer: https://www.noelleeming.co.nz/search?q=&start=5024)
+2024-04-16 00:43:13 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5088> (referer: https://www.noelleeming.co.nz/search?q=&start=5056)
+2024-04-16 00:43:13 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5120> (referer: https://www.noelleeming.co.nz/search?q=&start=5088)
+2024-04-16 00:43:14 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5152> (referer: https://www.noelleeming.co.nz/search?q=&start=5120)
+2024-04-16 00:43:15 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5184> (referer: https://www.noelleeming.co.nz/search?q=&start=5152)
+2024-04-16 00:43:16 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5216> (referer: https://www.noelleeming.co.nz/search?q=&start=5184)
+2024-04-16 00:43:17 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5248> (referer: https://www.noelleeming.co.nz/search?q=&start=5216)
+2024-04-16 00:43:18 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5280> (referer: https://www.noelleeming.co.nz/search?q=&start=5248)
+2024-04-16 00:43:19 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5312> (referer: https://www.noelleeming.co.nz/search?q=&start=5280)
+2024-04-16 00:43:20 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5344> (referer: https://www.noelleeming.co.nz/search?q=&start=5312)
+2024-04-16 00:43:21 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5376> (referer: https://www.noelleeming.co.nz/search?q=&start=5344)
+2024-04-16 00:43:22 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5408> (referer: https://www.noelleeming.co.nz/search?q=&start=5376)
+2024-04-16 00:43:22 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5440> (referer: https://www.noelleeming.co.nz/search?q=&start=5408)
+2024-04-16 00:43:23 [noels] DEBUG: Appended to file nl_prod_info.csv
+2024-04-16 00:43:23 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-04-16 00:43:23 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 184618,
+ 'downloader/request_count': 171,
+ 'downloader/request_method_count/GET': 171,
+ 'downloader/response_bytes': 12699638,
+ 'downloader/response_count': 171,
+ 'downloader/response_status_count/200': 171,
+ 'elapsed_time_seconds': 160.76575,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 4, 15, 12, 43, 23, 717711, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 141570500,
+ 'httpcompression/response_count': 171,
+ 'log_count/DEBUG': 345,
+ 'log_count/INFO': 12,
+ 'request_depth_max': 170,
+ 'response_received_count': 171,
+ 'scheduler/dequeued': 171,
+ 'scheduler/dequeued/memory': 171,
+ 'scheduler/enqueued': 171,
+ 'scheduler/enqueued/memory': 171,
+ 'start_time': datetime.datetime(2024, 4, 15, 12, 40, 42, 951961, tzinfo=datetime.timezone.utc)}
+2024-04-16 00:43:23 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-04-16 00:46:31 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scrape01)
+2024-04-16 00:46:31 [scrapy.utils.log] INFO: Versions: lxml 5.2.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.0, w3lib 2.1.2, Twisted 24.3.0, Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.5, Platform Windows-10-10.0.19045-SP0
+2024-04-16 00:46:31 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-04-16 00:46:31 [asyncio] DEBUG: Using selector: SelectSelector
+2024-04-16 00:46:31 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-04-16 00:46:31 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-04-16 00:46:31 [scrapy.extensions.telnet] INFO: Telnet Password: 94c5d44894eb6eb5
+2024-04-16 00:46:31 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-04-16 00:46:31 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrape01',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'scrape01.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['scrape01.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-04-16 00:46:31 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-04-16 00:46:31 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-04-16 00:46:31 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-04-16 00:46:31 [scrapy.core.engine] INFO: Spider opened
+2024-04-16 00:46:31 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-04-16 00:46:31 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-04-16 00:46:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=0> (referer: None)
+2024-04-16 00:46:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=32> (referer: https://www.noelleeming.co.nz/search?q=&start=0)
+2024-04-16 00:46:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=64> (referer: https://www.noelleeming.co.nz/search?q=&start=32)
+2024-04-16 00:46:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=96> (referer: https://www.noelleeming.co.nz/search?q=&start=64)
+2024-04-16 00:46:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=128> (referer: https://www.noelleeming.co.nz/search?q=&start=96)
+2024-04-16 00:46:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=160> (referer: https://www.noelleeming.co.nz/search?q=&start=128)
+2024-04-16 00:46:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=192> (referer: https://www.noelleeming.co.nz/search?q=&start=160)
+2024-04-16 00:46:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=224> (referer: https://www.noelleeming.co.nz/search?q=&start=192)
+2024-04-16 00:46:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=256> (referer: https://www.noelleeming.co.nz/search?q=&start=224)
+2024-04-16 00:46:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=288> (referer: https://www.noelleeming.co.nz/search?q=&start=256)
+2024-04-16 00:46:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=320> (referer: https://www.noelleeming.co.nz/search?q=&start=288)
+2024-04-16 00:46:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=352> (referer: https://www.noelleeming.co.nz/search?q=&start=320)
+2024-04-16 00:46:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=384> (referer: https://www.noelleeming.co.nz/search?q=&start=352)
+2024-04-16 00:46:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=416> (referer: https://www.noelleeming.co.nz/search?q=&start=384)
+2024-04-16 00:46:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=448> (referer: https://www.noelleeming.co.nz/search?q=&start=416)
+2024-04-16 00:46:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=480> (referer: https://www.noelleeming.co.nz/search?q=&start=448)
+2024-04-16 00:46:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=512> (referer: https://www.noelleeming.co.nz/search?q=&start=480)
+2024-04-16 00:46:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=544> (referer: https://www.noelleeming.co.nz/search?q=&start=512)
+2024-04-16 00:46:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=576> (referer: https://www.noelleeming.co.nz/search?q=&start=544)
+2024-04-16 00:46:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=608> (referer: https://www.noelleeming.co.nz/search?q=&start=576)
+2024-04-16 00:46:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=640> (referer: https://www.noelleeming.co.nz/search?q=&start=608)
+2024-04-16 00:46:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=672> (referer: https://www.noelleeming.co.nz/search?q=&start=640)
+2024-04-16 00:46:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=704> (referer: https://www.noelleeming.co.nz/search?q=&start=672)
+2024-04-16 00:46:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=736> (referer: https://www.noelleeming.co.nz/search?q=&start=704)
+2024-04-16 00:46:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=768> (referer: https://www.noelleeming.co.nz/search?q=&start=736)
+2024-04-16 00:46:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=800> (referer: https://www.noelleeming.co.nz/search?q=&start=768)
+2024-04-16 00:47:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=832> (referer: https://www.noelleeming.co.nz/search?q=&start=800)
+2024-04-16 00:47:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=864> (referer: https://www.noelleeming.co.nz/search?q=&start=832)
+2024-04-16 00:47:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=896> (referer: https://www.noelleeming.co.nz/search?q=&start=864)
+2024-04-16 00:47:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=928> (referer: https://www.noelleeming.co.nz/search?q=&start=896)
+2024-04-16 00:47:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=960> (referer: https://www.noelleeming.co.nz/search?q=&start=928)
+2024-04-16 00:47:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=992> (referer: https://www.noelleeming.co.nz/search?q=&start=960)
+2024-04-16 00:47:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1024> (referer: https://www.noelleeming.co.nz/search?q=&start=992)
+2024-04-16 00:47:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1056> (referer: https://www.noelleeming.co.nz/search?q=&start=1024)
+2024-04-16 00:47:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1088> (referer: https://www.noelleeming.co.nz/search?q=&start=1056)
+2024-04-16 00:47:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1120> (referer: https://www.noelleeming.co.nz/search?q=&start=1088)
+2024-04-16 00:47:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1152> (referer: https://www.noelleeming.co.nz/search?q=&start=1120)
+2024-04-16 00:47:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1184> (referer: https://www.noelleeming.co.nz/search?q=&start=1152)
+2024-04-16 00:47:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1216> (referer: https://www.noelleeming.co.nz/search?q=&start=1184)
+2024-04-16 00:47:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1248> (referer: https://www.noelleeming.co.nz/search?q=&start=1216)
+2024-04-16 00:47:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1280> (referer: https://www.noelleeming.co.nz/search?q=&start=1248)
+2024-04-16 00:47:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1312> (referer: https://www.noelleeming.co.nz/search?q=&start=1280)
+2024-04-16 00:47:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1344> (referer: https://www.noelleeming.co.nz/search?q=&start=1312)
+2024-04-16 00:47:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1376> (referer: https://www.noelleeming.co.nz/search?q=&start=1344)
+2024-04-16 00:47:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1408> (referer: https://www.noelleeming.co.nz/search?q=&start=1376)
+2024-04-16 00:47:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1440> (referer: https://www.noelleeming.co.nz/search?q=&start=1408)
+2024-04-16 00:47:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1472> (referer: https://www.noelleeming.co.nz/search?q=&start=1440)
+2024-04-16 00:47:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1504> (referer: https://www.noelleeming.co.nz/search?q=&start=1472)
+2024-04-16 00:47:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1536> (referer: https://www.noelleeming.co.nz/search?q=&start=1504)
+2024-04-16 00:47:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1568> (referer: https://www.noelleeming.co.nz/search?q=&start=1536)
+2024-04-16 00:47:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1600> (referer: https://www.noelleeming.co.nz/search?q=&start=1568)
+2024-04-16 00:47:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1632> (referer: https://www.noelleeming.co.nz/search?q=&start=1600)
+2024-04-16 00:47:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1664> (referer: https://www.noelleeming.co.nz/search?q=&start=1632)
+2024-04-16 00:47:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1696> (referer: https://www.noelleeming.co.nz/search?q=&start=1664)
+2024-04-16 00:47:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1728> (referer: https://www.noelleeming.co.nz/search?q=&start=1696)
+2024-04-16 00:47:31 [scrapy.extensions.logstats] INFO: Crawled 55 pages (at 55 pages/min), scraped 0 items (at 0 items/min)
+2024-04-16 00:47:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1760> (referer: https://www.noelleeming.co.nz/search?q=&start=1728)
+2024-04-16 00:47:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1792> (referer: https://www.noelleeming.co.nz/search?q=&start=1760)
+2024-04-16 00:47:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1824> (referer: https://www.noelleeming.co.nz/search?q=&start=1792)
+2024-04-16 00:47:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1856> (referer: https://www.noelleeming.co.nz/search?q=&start=1824)
+2024-04-16 00:47:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1888> (referer: https://www.noelleeming.co.nz/search?q=&start=1856)
+2024-04-16 00:47:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1920> (referer: https://www.noelleeming.co.nz/search?q=&start=1888)
+2024-04-16 00:47:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1952> (referer: https://www.noelleeming.co.nz/search?q=&start=1920)
+2024-04-16 00:47:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=1984> (referer: https://www.noelleeming.co.nz/search?q=&start=1952)
+2024-04-16 00:47:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2016> (referer: https://www.noelleeming.co.nz/search?q=&start=1984)
+2024-04-16 00:47:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2048> (referer: https://www.noelleeming.co.nz/search?q=&start=2016)
+2024-04-16 00:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2080> (referer: https://www.noelleeming.co.nz/search?q=&start=2048)
+2024-04-16 00:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2112> (referer: https://www.noelleeming.co.nz/search?q=&start=2080)
+2024-04-16 00:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2144> (referer: https://www.noelleeming.co.nz/search?q=&start=2112)
+2024-04-16 00:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2176> (referer: https://www.noelleeming.co.nz/search?q=&start=2144)
+2024-04-16 00:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2208> (referer: https://www.noelleeming.co.nz/search?q=&start=2176)
+2024-04-16 00:47:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2240> (referer: https://www.noelleeming.co.nz/search?q=&start=2208)
+2024-04-16 00:47:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2272> (referer: https://www.noelleeming.co.nz/search?q=&start=2240)
+2024-04-16 00:47:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2304> (referer: https://www.noelleeming.co.nz/search?q=&start=2272)
+2024-04-16 00:47:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2336> (referer: https://www.noelleeming.co.nz/search?q=&start=2304)
+2024-04-16 00:47:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2368> (referer: https://www.noelleeming.co.nz/search?q=&start=2336)
+2024-04-16 00:47:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2400> (referer: https://www.noelleeming.co.nz/search?q=&start=2368)
+2024-04-16 00:47:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2432> (referer: https://www.noelleeming.co.nz/search?q=&start=2400)
+2024-04-16 00:47:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2464> (referer: https://www.noelleeming.co.nz/search?q=&start=2432)
+2024-04-16 00:47:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2496> (referer: https://www.noelleeming.co.nz/search?q=&start=2464)
+2024-04-16 00:47:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2528> (referer: https://www.noelleeming.co.nz/search?q=&start=2496)
+2024-04-16 00:47:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2560> (referer: https://www.noelleeming.co.nz/search?q=&start=2528)
+2024-04-16 00:47:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2592> (referer: https://www.noelleeming.co.nz/search?q=&start=2560)
+2024-04-16 00:48:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2624> (referer: https://www.noelleeming.co.nz/search?q=&start=2592)
+2024-04-16 00:48:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2656> (referer: https://www.noelleeming.co.nz/search?q=&start=2624)
+2024-04-16 00:48:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2688> (referer: https://www.noelleeming.co.nz/search?q=&start=2656)
+2024-04-16 00:48:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2720> (referer: https://www.noelleeming.co.nz/search?q=&start=2688)
+2024-04-16 00:48:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2752> (referer: https://www.noelleeming.co.nz/search?q=&start=2720)
+2024-04-16 00:48:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2784> (referer: https://www.noelleeming.co.nz/search?q=&start=2752)
+2024-04-16 00:48:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2816> (referer: https://www.noelleeming.co.nz/search?q=&start=2784)
+2024-04-16 00:48:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2848> (referer: https://www.noelleeming.co.nz/search?q=&start=2816)
+2024-04-16 00:48:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2880> (referer: https://www.noelleeming.co.nz/search?q=&start=2848)
+2024-04-16 00:48:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2912> (referer: https://www.noelleeming.co.nz/search?q=&start=2880)
+2024-04-16 00:48:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2944> (referer: https://www.noelleeming.co.nz/search?q=&start=2912)
+2024-04-16 00:48:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=2976> (referer: https://www.noelleeming.co.nz/search?q=&start=2944)
+2024-04-16 00:48:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3008> (referer: https://www.noelleeming.co.nz/search?q=&start=2976)
+2024-04-16 00:48:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3040> (referer: https://www.noelleeming.co.nz/search?q=&start=3008)
+2024-04-16 00:48:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3072> (referer: https://www.noelleeming.co.nz/search?q=&start=3040)
+2024-04-16 00:48:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3104> (referer: https://www.noelleeming.co.nz/search?q=&start=3072)
+2024-04-16 00:48:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3136> (referer: https://www.noelleeming.co.nz/search?q=&start=3104)
+2024-04-16 00:48:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3168> (referer: https://www.noelleeming.co.nz/search?q=&start=3136)
+2024-04-16 00:48:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3200> (referer: https://www.noelleeming.co.nz/search?q=&start=3168)
+2024-04-16 00:48:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3232> (referer: https://www.noelleeming.co.nz/search?q=&start=3200)
+2024-04-16 00:48:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3264> (referer: https://www.noelleeming.co.nz/search?q=&start=3232)
+2024-04-16 00:48:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3296> (referer: https://www.noelleeming.co.nz/search?q=&start=3264)
+2024-04-16 00:48:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3328> (referer: https://www.noelleeming.co.nz/search?q=&start=3296)
+2024-04-16 00:48:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3360> (referer: https://www.noelleeming.co.nz/search?q=&start=3328)
+2024-04-16 00:48:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3392> (referer: https://www.noelleeming.co.nz/search?q=&start=3360)
+2024-04-16 00:48:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3424> (referer: https://www.noelleeming.co.nz/search?q=&start=3392)
+2024-04-16 00:48:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3456> (referer: https://www.noelleeming.co.nz/search?q=&start=3424)
+2024-04-16 00:48:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3488> (referer: https://www.noelleeming.co.nz/search?q=&start=3456)
+2024-04-16 00:48:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3520> (referer: https://www.noelleeming.co.nz/search?q=&start=3488)
+2024-04-16 00:48:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3552> (referer: https://www.noelleeming.co.nz/search?q=&start=3520)
+2024-04-16 00:48:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3584> (referer: https://www.noelleeming.co.nz/search?q=&start=3552)
+2024-04-16 00:48:31 [scrapy.extensions.logstats] INFO: Crawled 113 pages (at 58 pages/min), scraped 0 items (at 0 items/min)
+2024-04-16 00:48:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3616> (referer: https://www.noelleeming.co.nz/search?q=&start=3584)
+2024-04-16 00:48:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3648> (referer: https://www.noelleeming.co.nz/search?q=&start=3616)
+2024-04-16 00:48:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3680> (referer: https://www.noelleeming.co.nz/search?q=&start=3648)
+2024-04-16 00:48:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3712> (referer: https://www.noelleeming.co.nz/search?q=&start=3680)
+2024-04-16 00:48:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3744> (referer: https://www.noelleeming.co.nz/search?q=&start=3712)
+2024-04-16 00:48:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3776> (referer: https://www.noelleeming.co.nz/search?q=&start=3744)
+2024-04-16 00:48:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3808> (referer: https://www.noelleeming.co.nz/search?q=&start=3776)
+2024-04-16 00:48:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3840> (referer: https://www.noelleeming.co.nz/search?q=&start=3808)
+2024-04-16 00:48:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3872> (referer: https://www.noelleeming.co.nz/search?q=&start=3840)
+2024-04-16 00:48:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3904> (referer: https://www.noelleeming.co.nz/search?q=&start=3872)
+2024-04-16 00:48:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3936> (referer: https://www.noelleeming.co.nz/search?q=&start=3904)
+2024-04-16 00:48:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=3968> (referer: https://www.noelleeming.co.nz/search?q=&start=3936)
+2024-04-16 00:48:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4000> (referer: https://www.noelleeming.co.nz/search?q=&start=3968)
+2024-04-16 00:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4032> (referer: https://www.noelleeming.co.nz/search?q=&start=4000)
+2024-04-16 00:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4064> (referer: https://www.noelleeming.co.nz/search?q=&start=4032)
+2024-04-16 00:48:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4096> (referer: https://www.noelleeming.co.nz/search?q=&start=4064)
+2024-04-16 00:48:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4128> (referer: https://www.noelleeming.co.nz/search?q=&start=4096)
+2024-04-16 00:48:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4160> (referer: https://www.noelleeming.co.nz/search?q=&start=4128)
+2024-04-16 00:48:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4192> (referer: https://www.noelleeming.co.nz/search?q=&start=4160)
+2024-04-16 00:48:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4224> (referer: https://www.noelleeming.co.nz/search?q=&start=4192)
+2024-04-16 00:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4256> (referer: https://www.noelleeming.co.nz/search?q=&start=4224)
+2024-04-16 00:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4288> (referer: https://www.noelleeming.co.nz/search?q=&start=4256)
+2024-04-16 00:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4320> (referer: https://www.noelleeming.co.nz/search?q=&start=4288)
+2024-04-16 00:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4352> (referer: https://www.noelleeming.co.nz/search?q=&start=4320)
+2024-04-16 00:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4384> (referer: https://www.noelleeming.co.nz/search?q=&start=4352)
+2024-04-16 00:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4416> (referer: https://www.noelleeming.co.nz/search?q=&start=4384)
+2024-04-16 00:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4448> (referer: https://www.noelleeming.co.nz/search?q=&start=4416)
+2024-04-16 00:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4480> (referer: https://www.noelleeming.co.nz/search?q=&start=4448)
+2024-04-16 00:49:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4512> (referer: https://www.noelleeming.co.nz/search?q=&start=4480)
+2024-04-16 00:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4544> (referer: https://www.noelleeming.co.nz/search?q=&start=4512)
+2024-04-16 00:49:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4576> (referer: https://www.noelleeming.co.nz/search?q=&start=4544)
+2024-04-16 00:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4608> (referer: https://www.noelleeming.co.nz/search?q=&start=4576)
+2024-04-16 00:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4640> (referer: https://www.noelleeming.co.nz/search?q=&start=4608)
+2024-04-16 00:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4672> (referer: https://www.noelleeming.co.nz/search?q=&start=4640)
+2024-04-16 00:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4704> (referer: https://www.noelleeming.co.nz/search?q=&start=4672)
+2024-04-16 00:49:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4736> (referer: https://www.noelleeming.co.nz/search?q=&start=4704)
+2024-04-16 00:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4768> (referer: https://www.noelleeming.co.nz/search?q=&start=4736)
+2024-04-16 00:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4800> (referer: https://www.noelleeming.co.nz/search?q=&start=4768)
+2024-04-16 00:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4832> (referer: https://www.noelleeming.co.nz/search?q=&start=4800)
+2024-04-16 00:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4864> (referer: https://www.noelleeming.co.nz/search?q=&start=4832)
+2024-04-16 00:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4896> (referer: https://www.noelleeming.co.nz/search?q=&start=4864)
+2024-04-16 00:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4928> (referer: https://www.noelleeming.co.nz/search?q=&start=4896)
+2024-04-16 00:49:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4960> (referer: https://www.noelleeming.co.nz/search?q=&start=4928)
+2024-04-16 00:49:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=4992> (referer: https://www.noelleeming.co.nz/search?q=&start=4960)
+2024-04-16 00:49:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5024> (referer: https://www.noelleeming.co.nz/search?q=&start=4992)
+2024-04-16 00:49:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5056> (referer: https://www.noelleeming.co.nz/search?q=&start=5024)
+2024-04-16 00:49:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5088> (referer: https://www.noelleeming.co.nz/search?q=&start=5056)
+2024-04-16 00:49:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5120> (referer: https://www.noelleeming.co.nz/search?q=&start=5088)
+2024-04-16 00:49:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5152> (referer: https://www.noelleeming.co.nz/search?q=&start=5120)
+2024-04-16 00:49:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5184> (referer: https://www.noelleeming.co.nz/search?q=&start=5152)
+2024-04-16 00:49:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5216> (referer: https://www.noelleeming.co.nz/search?q=&start=5184)
+2024-04-16 00:49:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5248> (referer: https://www.noelleeming.co.nz/search?q=&start=5216)
+2024-04-16 00:49:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5280> (referer: https://www.noelleeming.co.nz/search?q=&start=5248)
+2024-04-16 00:49:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5312> (referer: https://www.noelleeming.co.nz/search?q=&start=5280)
+2024-04-16 00:49:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5344> (referer: https://www.noelleeming.co.nz/search?q=&start=5312)
+2024-04-16 00:49:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5376> (referer: https://www.noelleeming.co.nz/search?q=&start=5344)
+2024-04-16 00:49:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5408> (referer: https://www.noelleeming.co.nz/search?q=&start=5376)
+2024-04-16 00:49:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=5440> (referer: https://www.noelleeming.co.nz/search?q=&start=5408)
+2024-04-16 00:49:29 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-04-16 00:49:29 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 184618,
+ 'downloader/request_count': 171,
+ 'downloader/request_method_count/GET': 171,
+ 'downloader/response_bytes': 12700237,
+ 'downloader/response_count': 171,
+ 'downloader/response_status_count/200': 171,
+ 'elapsed_time_seconds': 177.572579,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 4, 15, 12, 49, 29, 178005, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 141566458,
+ 'httpcompression/response_count': 171,
+ 'log_count/DEBUG': 174,
+ 'log_count/INFO': 12,
+ 'request_depth_max': 170,
+ 'response_received_count': 171,
+ 'scheduler/dequeued': 171,
+ 'scheduler/dequeued/memory': 171,
+ 'scheduler/enqueued': 171,
+ 'scheduler/enqueued/memory': 171,
+ 'start_time': datetime.datetime(2024, 4, 15, 12, 46, 31, 605426, tzinfo=datetime.timezone.utc)}
+2024-04-16 00:49:29 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-04-16 00:56:58 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scrape01)
+2024-04-16 00:56:58 [scrapy.utils.log] INFO: Versions: lxml 5.2.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.0, w3lib 2.1.2, Twisted 24.3.0, Python 3.10.6 (tags/v3.10.6:9c7b4bd, Aug  1 2022, 21:53:49) [MSC v.1932 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.5, Platform Windows-10-10.0.19045-SP0
+2024-04-16 00:56:58 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-04-16 00:56:58 [asyncio] DEBUG: Using selector: SelectSelector
+2024-04-16 00:56:58 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-04-16 00:56:58 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-04-16 00:56:58 [scrapy.extensions.telnet] INFO: Telnet Password: 54c33c22920eed54
+2024-04-16 00:56:58 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-04-16 00:56:58 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrape01',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'scrape01.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['scrape01.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-04-16 00:56:58 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-04-16 00:56:58 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-04-16 00:56:58 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-04-16 00:56:58 [scrapy.core.engine] INFO: Spider opened
+2024-04-16 00:56:58 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-04-16 00:56:58 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-04-16 00:56:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.noelleeming.co.nz/search?q=&start=0> (referer: None)
+2024-04-16 00:56:59 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-04-16 00:56:59 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 239,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 51771,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.669066,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 4, 15, 12, 56, 59, 33284, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 396591,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 4,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2024, 4, 15, 12, 56, 58, 364218, tzinfo=datetime.timezone.utc)}
+2024-04-16 00:56:59 [scrapy.core.engine] INFO: Spider closed (finished)
