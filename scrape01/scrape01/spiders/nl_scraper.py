@@ -27,7 +27,6 @@ class noelsSpider(scrapy.Spider):
 
 
     def __init__(self, *args, **kwargs):
-        time.sleep(10)
         super(noelsSpider, self).__init__(*args, **kwargs)
         self.setup_database()
 
@@ -40,9 +39,34 @@ class noelsSpider(scrapy.Spider):
         for product in products:
             product['date_collected'] = today
             self.cursor.execute('''
-                INSERT INTO NL_product_data (date_collected, id, name, brand, productEAN, price) VALUES (?, ?, ?, ?, ?, ?)
-            ''', (product['date_collected'], product['id'], product['name'], product['brand'],
-                  product['productEAN'], product['price']))
+            INSERT INTO NL_product_data (
+                date_collected, id, name, brand, productEAN, productBadges, productRating, category,
+                primaryCategoryId, productSecondaryNavigationCategory, productCategoryLevel1, productCategoryLevel2,
+                productCategoryLevel3, productCategoryLevel4, productCategoryLevel5, productCategoryLevel6,
+                productCategoryLevel7, productChannelType, price, productThenPrice
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ''', (
+            product.get('date_collected', datetime.now().date()),
+            product.get('id', ''),
+            product.get('name', ''),
+            product.get('brand', ''),
+            product.get('productEAN', ''),
+            product.get('productBadges', ''),
+            product.get('productRating', 0),  # Assuming default rating is 0 if not found
+            product.get('category', ''),
+            product.get('primaryCategoryId', ''),
+            product.get('productSecondaryNavigationCategory', ''),
+            product.get('productCategoryLevel1', ''),
+            product.get('productCategoryLevel2', ''),
+            product.get('productCategoryLevel3', ''),
+            product.get('productCategoryLevel4', ''),
+            product.get('productCategoryLevel5', ''),
+            product.get('productCategoryLevel6', ''),
+            product.get('productCategoryLevel7', ''),
+            product.get('productChannelType', ''),
+            product.get('price', 0),  # Assuming default price is 0 if not found
+            product.get('productThenPrice', 0)  # Assuming default then price is 0 if not found
+))
         self.conn.commit()
         
         if products: #if there was any product information on the page
@@ -62,6 +86,7 @@ class noelsSpider(scrapy.Spider):
                 name TEXT,
                 brand TEXT,
                 productEAN TEXT,
+                productBadges TEXT,
                 productRating INTEGER,
                 category TEXT,
                 primaryCategoryId TEXT,
@@ -75,8 +100,7 @@ class noelsSpider(scrapy.Spider):
                 productCategoryLevel7 TEXT,
                 productChannelType TEXT,
                 price INTEGER,
-                productThenPrice INTEGER,
-                other_details TEXT
+                productThenPrice INTEGER
             )
         ''')
         self.conn.commit()
