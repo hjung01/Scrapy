@@ -13,8 +13,7 @@ import sqlite3
 
 class noelsSpider(scrapy.Spider):
     name = "noels" #name of spider
-    time.sleep(10)
-    start_urls = [f'https://www.noelleeming.co.nz/search?q=&start=0'] #initial url to start scraping
+    start_urls = [f'https://www.noelleeming.co.nz/search?cgid=root&start=0#maincontent'] #initial url to start scraping
     filename = 'nl_prod_info.csv' #filename for csv output of data
 
     #logging of spider
@@ -28,6 +27,7 @@ class noelsSpider(scrapy.Spider):
 
 
     def __init__(self, *args, **kwargs):
+        time.sleep(10)
         super(noelsSpider, self).__init__(*args, **kwargs)
         self.setup_database()
 
@@ -39,16 +39,16 @@ class noelsSpider(scrapy.Spider):
 
         for product in products:
             product['date_collected'] = today
-        # Assuming 'product' is a dictionary with keys 'name', 'price', 'other_details'
             self.cursor.execute('''
-                INSERT INTO NL_product_data (name, price, other_details) VALUES (?, ?, ?)
-            ''', (product['name'], product['price'], product.get('other_details')))
+                INSERT INTO NL_product_data (date_collected, id, name, brand, productEAN, price) VALUES (?, ?, ?, ?, ?, ?)
+            ''', (product['date_collected'], product['id'], product['name'], product['brand'],
+                  product['productEAN'], product['price']))
         self.conn.commit()
         
         if products: #if there was any product information on the page
             current_start = int(response.url.split('start=')[-1]) #extracts current 'start' parameter from page url for pagination
             next_start = current_start + 32 #32 products on each page
-            next_page_url = f"https://www.noelleeming.co.nz/search?q=&start={next_start}" #constructs new url to scrape +=32
+            next_page_url = f"https://www.noelleeming.co.nz/search?cgid=root&start={next_start}#maincontent" #constructs new url to scrape +=32
             yield response.follow(next_page_url, self.parse) #schedules request to next page, calling parse method and looping
 
 
@@ -57,9 +57,25 @@ class noelsSpider(scrapy.Spider):
         self.cursor = self.conn.cursor()
         self.cursor.execute('''
             CREATE TABLE IF NOT EXISTS NL_product_data (
-                id INTEGER PRIMARY KEY,
+                date_collected TEXT,
+                id TEXT,
                 name TEXT,
-                price TEXT,
+                brand TEXT,
+                productEAN TEXT,
+                productRating INTEGER,
+                category TEXT,
+                primaryCategoryId TEXT,
+                productSecondaryNavigationCategory TEXT,
+                productCategoryLevel1 TEXT,
+                productCategoryLevel2 TEXT,
+                productCategoryLevel3 TEXT,
+                productCategoryLevel4 TEXT,
+                productCategoryLevel5 TEXT,
+                productCategoryLevel6 TEXT,
+                productCategoryLevel7 TEXT,
+                productChannelType TEXT,
+                price INTEGER,
+                productThenPrice INTEGER,
                 other_details TEXT
             )
         ''')
