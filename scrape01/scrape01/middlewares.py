@@ -101,3 +101,20 @@ class Scrape01DownloaderMiddleware:
 
     def spider_opened(self, spider):
         spider.logger.info("Spider opened: %s" % spider.name)
+
+
+import random
+
+
+class RandomProxyMiddleware(object):
+    def __init__(self):
+        self.proxies = [
+            'http://172.67.105.234',
+            # Add more proxies as needed
+        ]
+
+    def process_request(self, request, spider):
+        # Randomly choose a proxy from the list to use for this request
+        proxy = random.choice(self.proxies)
+        request.meta['proxy'] = proxy
+        spider.logger.info(f'Using proxy: {proxy}')

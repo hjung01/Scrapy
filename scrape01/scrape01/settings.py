@@ -60,6 +60,11 @@ CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #    "scrape01.middlewares.Scrape01DownloaderMiddleware": 543,
 #}
 
+# DOWNLOADER_MIDDLEWARES = {
+#     'scrape01.middlewares.RandomProxyMiddleware': 350,
+#     # ... make sure to disable any conflicting middlewares or set appropriate priorities
+# }
+
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
 #EXTENSIONS = {
