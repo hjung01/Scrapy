@@ -1,7 +1,9 @@
-call "D:\Py Projects\Scrapy\.venv\Scripts\activate.bat"
+@Echo Off
 
-cd "D:\Py Projects\Scrapy\scrape01"
+CALL "D:\Py Projects\Scrapy\.venv\Scripts\activate.bat"
+
+CD "D:\Py Projects\Scrapy\scrape01"
 
 scrapy crawl noels
 
-deactivate
+CALL "D:\Py Projects\Scrapy\.venv\Scripts\deactivate.bat"
